@@ -34,7 +34,7 @@ Write a program that accepts two numbers and calculates these properties.
 
 | Line # | Content                                                                    |
 | ------ | -------------------------------------------------------------------------- |
-| 1      | Two integers *a* and *b* separated by a single space (1 ≤ *a*,*b* ≤ 10000) |
+| 1      | Two integers *a* and *b* separated by a single space (1 ≤ *a*, *b* ≤ 10000) |
 
 #### Output format
 
