@@ -21,7 +21,7 @@ Welcome to C++!
 ### 2. Let's do some math
 
 Little Flower wants to do some math.
-He wants to know the sum, difference, product and ratio of two numbers *a* and *b*.
+He wants to know the sum of two numbers *a* and *b*.
 Write a program that accepts two numbers and calculates these properties. 
 
 #### Program properties
