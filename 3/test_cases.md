@@ -1,86 +1,86 @@
 # Test cases
 
-## scalc
+### scalc
 
-### Case 1
+#### Case 1
 
-#### Input
+##### Input
 
 ```
 4751 + 9749
 ```
 
-#### Output
+##### Output
 
 ```
 14500
 ```
 
-### Case 2
+#### Case 2
 
-#### Input
+##### Input
 
 ```
 8311 - 347
 ```
 
-#### Output
+##### Output
 
 ```
 7964
 ```
 
-### Case 3
+#### Case 3
 
-#### Input
+##### Input
 
 ```
 3901 * 755
 ```
 
-#### Output
+##### Output
 
 ```
 2945255
 ```
 
-### Case 4
+#### Case 4
 
-#### Input
+##### Input
 
 ```
 5845 / 167
 ```
 
-#### Output
+##### Output
 
 ```
 35
 ```
 
-### Case 5
+#### Case 5
 
-#### Input
+##### Input
 
 ```
 1 / 1
 ```
 
-#### Output
+##### Output
 
 ```
 1
 ```
 
-### Case 6
+#### Case 6
 
-#### Input
+##### Input
 
 ```
 10000 * 10000
 ```
 
-#### Output
+##### Output
 
 ```
 100000000
