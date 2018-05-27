@@ -6,6 +6,12 @@
 
 Little Flower the newbie is learning C++. Let's welcome him by writing a program that prints a welcome message. 
 
+#### Program properties
+
+* Program name: **welcome**
+* Time limit: 1 second
+* Memory limit: 512 megabytes
+
 #### Output
 
 ```
@@ -17,6 +23,12 @@ Welcome to C++!
 Little Flower wants to do some math.
 He wants to know the sum, difference, product and ratio of two numbers *a* and *b*.
 Write a program that accepts two numbers and calculates these properties. 
+
+#### Program properties
+
+* Program name: **math**
+* Time limit: 1 second
+* Memory limit: 512 megabytes
 
 #### Input format
 
@@ -52,6 +64,12 @@ Little Flower's base on Mars is attacked by endermen and creepers.
 They are split into *n* teams. 
 For 1 ≤ *i* ≤ *n*, the *i*<sup>th</sup> team consists of one creeper and *a*<sub>*i*</sub> endermen. 
 Write a program to help him calculate the total number of monsters. 
+
+#### Program properties
+
+* Program name: **monster**
+* Time limit: 1 second
+* Memory limit: 512 megabytes
 
 #### Input format
 
