@@ -114,9 +114,94 @@ The difference between a `while` loop and a `do` loop is that,
 the former checks the condition before executing the first time,
 while the latter does not.
 
+## Selections
 
+Now you are facing another issue -- the user inputs an integer from 1 to 5 and you output a word from `one` to `five`.
 
+### `if` selections
 
+```C++
+int n; std::cin >> n;
+     if (n == 1) std::cout << "one\n";
+else if (n == 2) std::cout << "two\n";
+else if (n == 3) std::cout << "three\n";
+else if (n == 4) std::cout << "four\n";
+else if (n == 5) std::cout << "five\n";
+```
+
+Note that if `n` is not 1 to 5, *none of the branches will be executed*.
+
+The simplest form of `if` selection is:
+
+```C++
+if (/*...*/) {
+    /*...*/
+}
+```
+
+In case the condition is not met, *no code is executed*.
+
+If, additionally, you output "???" in case the integer input is not 1 to 5,
+you can do this:
+
+```C++
+     if (n == 1) std::cout << "one\n";
+else if (n == 2) std::cout << "two\n";
+/*...*/
+else if (n == 5) std::cout << "five\n";
+else             std::cout << "???\n";
+```
+
+In this case, the final branch will be executed
+if `n` is not 1 to 5.
+
+### `switch` selections
+
+You can also code like this:
+
+```C++
+switch (n) {
+case 1 : std::cout << "one\n"  ; break;
+case 2 : std::cout << "two\n"  ; break;
+case 3 : std::cout << "three\n"; break;
+case 4 : std::cout << "four\n" ; break;
+case 5 : std::cout << "five\n" ; break;
+default: std::cout << "???\n"  ;
+}
+```
+
+The `default` can be 
+
+If you do not `break;` after a `case`,
+the next `case` will then be executed after the current `case`.  
+For example, consider printing
+`small` for 1 to 5,
+`large` for 6 to 10,
+`???` for others:
+
+```C++
+switch (n) {
+case 1: case 2: case 3: case 4: case 5:
+    std::cout << "small\n";
+    break;
+case 6: case 7: case 8: case 9: case 10:
+    std::cout << "large\n";
+    break;
+default:
+    std::cout << "???\n";
+}
+```
+
+Notes:
+* `switch` can only be used to test one-to-many equality;
+* `switch` can only be used with `int`, `bool` and `char` (by now);  
+  in particular, `double` and `std::string` are not allowed.
+
+However, when appropriate, not only is `switch` less verbose than `if else if`s,
+but also *more efficient*.
+
+TODO: examples
+TODO: if and switch images
 
 
 
