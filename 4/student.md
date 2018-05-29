@@ -53,7 +53,7 @@ for (int i = 1; i <= n; ++i) {
 
 The aforementioned `for` loop works like this:
 
-![for](https://github.com/Little-Flower-171/C-2018/blob/master/for.png)
+![for](https://github.com/Little-Flower-171/C-2018/blob/master/4/for.png)
 
 *What do the following `for` loops print?*
 
