@@ -129,6 +129,10 @@ else if (n == 4) std::cout << "four\n";
 else if (n == 5) std::cout << "five\n";
 ```
 
+It works like this:
+
+![for](https://github.com/Little-Flower-171/C-2018/blob/master/4/if.png)
+
 Note that if `n` is not 1 to 5, *none of the branches will be executed*.
 
 The simplest form of `if` selection is:
@@ -155,6 +159,19 @@ else             std::cout << "???\n";
 In this case, the final branch will be executed
 if `n` is not 1 to 5.
 
+*What are the effects the following `if` selections?*
+
+```
+int x; std::cin >> x;
+if (std::cin) std::cout << "Good\n";
+```
+
+```
+int x;
+if (std::cin >> x)
+    std::cout << "Good!\n";
+```
+
 ### `switch` selections
 
 You can also code like this:
@@ -170,7 +187,11 @@ default: std::cout << "???\n"  ;
 }
 ```
 
-The `default` can be 
+which works like this:
+
+![for](https://github.com/Little-Flower-171/C-2018/blob/master/4/switch.png)
+
+The `default` can be omitted, in which case no code will be executed if *n* is not 1 to 5.
 
 If you do not `break;` after a `case`,
 the next `case` will then be executed after the current `case`.  
@@ -198,20 +219,98 @@ Notes:
   in particular, `double` and `std::string` are not allowed.
 
 However, when appropriate, not only is `switch` less verbose than `if else if`s,
-but also *more efficient*.
+but also *more efficient*. *Why?*
 
-TODO: examples
-TODO: if and switch images
+## Examples
 
+### 1. Little Flower's numbers
 
+Given positive integers *a* and *b*, a positive integer
 
+* that is a multiple of *a*,
+* that gives a remainder of *a* when divided by *b*, and
+* that is lower than *a*<sup>2</sup> &sdot; *b*
 
+is called a *Little Flower's number*.
 
+Write a program about this.
 
+#### Program properties
 
+* Program name: *lfnum*
+* Time limit: 1 second
+* Memory limit: 512 megabytes
 
+#### Input format
 
+Line # | Content
+--- | ---
+1 | two positive integers *a* and *b* separated by a single space (*a* < *b* ≤ 100)
 
+#### Output format
 
+Line # | Content
+--- | ---
+1 | the total number of *little Flower's number*s |
 
+#### Sample input
 
+```
+2 3
+```
+
+#### Sample output
+
+```
+2
+```
+
+#### Hints
+
+The most intuitive way is to `for` over all numbers lower than *a*<sup>2</sup> &sdot; *b*
+using `if` to determine whether the number is a *Little Flower's number*.
+
+However, there are better ways.
+
+### 2. Virus infected
+
+Little Flower's virtual machine is infected by a virus called "Minceraft" (not "Minecraft").
+Minceraft replaces every lower-case vowel letter (a, e, i, o, or u) into a "x".
+
+Your task is to write a mini-Minceraft.
+
+#### Program properties
+
+* Program name: virus
+* Time limit: 1 second
+* Memory limit: 512 megabytes
+
+#### Input format
+
+Line # | Content
+--- | ---
+1 | *n*, the length of text (1 ≤ *n* ≤ 50)
+2 | a string of length *n*, consisting of only alphanumerics and spaces
+
+#### Output format
+
+Line # | Content
+--- | ---
+1 | Doctored text
+
+#### Sample input
+
+```
+42
+Zai yi ci de hui dao zhe shu xi de shi jie
+```
+
+#### Sample output
+
+```
+Zxx yx cx dx hxx dxx zhx shx xx dx shx jxx
+```
+
+#### Hints
+
+You do not actually need to store the entire text.
