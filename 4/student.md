@@ -309,6 +309,35 @@ Zai yi ci de hui dao zhe shu xi de shi jie
 Zxx yx cx dx hxx dxx zhx shx xx dx shx jxx
 ```
 
+#### Notes
+
+Both
+
+```C++
+char c;
+std::cin >> c;
+```
+
+and
+
+```C++
+std::string s;
+std::cin >> s;
+```
+
+skips the spaces; use the following instead:
+
+```C++
+char c;
+std::cin.get(c); // reads spaces
+```
+
+```C++
+std::string s;
+std::getline(std::cin, s); // reads a line
+//   getline(std::cin, s); // also ok
+```
+
 #### Hints
 
 You do not actually need to store the entire text.
