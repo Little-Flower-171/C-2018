@@ -267,10 +267,8 @@ Line # | Content
 
 #### Hints
 
-The most intuitive way is to `for` over all numbers lower than *a*<sup>2</sup> &sdot; *b*
+You can `for` over all numbers lower than *a*<sup>2</sup> &sdot; *b*
 using `if` to determine whether the number is a *Little Flower's number*.
-
-However, there are better ways.
 
 ### 2. Virus infected
 
