@@ -6,7 +6,7 @@ int main()
     std::cin >> a >> b;
     
     int total = 0;
-    for (int i = 0; i < a*a*b; ++i) {
+    for (int i = 1; i < a*a*b; ++i) {
         if (i%a == 0 && i%b == a) 
             ++total;
     }
