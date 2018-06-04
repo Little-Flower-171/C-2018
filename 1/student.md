@@ -96,3 +96,28 @@ Write a program to help him calculate the total number of monsters.
 ```
 20
 ```
+
+## Words
+
+Word | Meaning | Pronunciation
+--- | --- | ---
+program | 程序 | BrE /ˈprəʊɡræm/ AmE /ˈproʊɡræm/
+message | 信息 | /ˈmesɪdʒ/
+property | 性质 | BrE /ˈprɒpəti/ AmE /ˈprɑːpərti/
+limit | 限制 | /ˈlɪmɪt/
+memory | 内存 | /ˈmeməri/
+mega- | 2<sup>20</sup> | /ˈmeɡə-/
+byte | 字节 | /baɪt/
+output | 输出 | /ˈaʊtpʊt/
+accept | 接受 | /əkˈsept/
+input | 输入 | /ˈɪnpʊt/
+format | 格式 | BrE /ˈfɔːmæt/ AmE /ˈfɔːrmæt/
+line | 行 | /laɪn/
+content | 内容 | BrE /ˈkɒntent/ AmE /ˈkɑːntent/
+separate | 分隔 | /ˈsepəreɪt/
+space | 空格（字符） | /speɪs/
+sample | 样例 | BrE /ˈsɑːmpl/ AmE /ˈsæmpl/
+decimal | 十进制 | /ˈdesɪml/
+form | 形式 | BrE /fɔːm/ AmE /fɔːrm/
+lead | 前导 | /liːd/
+line feed | 换行（字符） | /laɪn fiːd/
