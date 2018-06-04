@@ -106,7 +106,7 @@ message | 信息 | /ˈmesɪdʒ/
 property | 性质 | BrE /ˈprɒpəti/ AmE /ˈprɑːpərti/
 limit | 限制 | /ˈlɪmɪt/
 memory | 内存 | /ˈmeməri/
-mega- | 2<sup>20</sup> | /ˈmeɡə-/
+mega- | 1048576 | /ˈmeɡə-/
 byte | 字节 | /baɪt/
 output | 输出 | /ˈaʊtpʊt/
 accept | 接受 | /əkˈsept/
