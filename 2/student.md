@@ -116,3 +116,5 @@ value | 值 | /ˈvæljuː/
 result | 结果 | /rɪˈzʌlt/
 display | 显示 | /dɪˈspleɪ/
 style | 样式 | /staɪl/
+reproduce | 再现 | BrE /ˌriːprəˈdjuːs/ AmE /ˌriːprəˈduːs/
+
