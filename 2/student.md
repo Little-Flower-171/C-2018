@@ -83,3 +83,22 @@ Then, on standard error stream:
 The denominator is 0!
 Is your brain impaired, Little Flower?
 ```
+
+## Words
+
+Word | Meaning | Pronunciation
+--- | --- | ---
+stream | 流 | /stri:m/
+console | 控制台 | BrE /ˈkɒnsəʊl/ AmE /ˈkɑːnsoʊl/
+application | 应用程序 | /ˌæplɪˈkeɪʃn/
+execute | 执行 | /ˈeksɪkjuːt/
+manage | 管理 | /ˈmænɪdʒ/
+standard | 标准 | BrE /ˈstændəd/ AmE /ˈstændərd/
+sequence | 序列 | /ˈsiːkwəns/
+file | 文件 | /faɪl/
+string | 字符串 | /strɪŋ/
+code | 代码 | BrE /kəʊd/ AmE /koʊd/
+library | 库 | BrE /ˈlaɪbrəri; ˈlaɪbri/ AmE /ˈlaɪbreri/
+object | 对象 | BrE /ˈɒbdʒɪkt/ AmE /ˈɑːbdʒekt; ˈɑːbdʒɪkt/
+access | 访问 | /ˈækses/
+operator | 运算符 | BrE /ˈɒpəreɪtə(r)/ AmE /ˈɑːpəreɪtər/
