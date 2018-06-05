@@ -10,7 +10,7 @@ In the context of C++, a stream is a sequence of characters.
 There are two kinds of streams: **input stream** and **output stream**.  
 A program typically reads stuff from left for an input stream, and writes stuff to right for an output stream.
 The standard error stream is typically used to report error.  
-The concept of stream does not bound to standard streams;
+A stream is not necessarily a standard stream;
 for example, files and strings can also be regarded as streams.
 
 Think about this: *is the standard error stream an input or output stream?*
