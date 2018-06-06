@@ -20,7 +20,7 @@ std::cin >> a >> b;
 
 For different types of data, `>>` behaves differently; by default:
 
-It first discards any whitespaces encountered (including spaces, line feeds, and tabs);
+It first discards any whitespaces (including spaces, line feeds, and tabs);
 then,
 * For `char`s, it extracts one character;
 * For `std::string`s, it extracts all characters before encountering another whitespace;
