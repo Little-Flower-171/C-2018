@@ -20,10 +20,10 @@ std::cin >> a >> b;
 
 For different types of data, `>>` behaves differently; by default:
 
-It first discards any whitespaces (including spaces, line feeds, and tabs);
+It first discards any whitespaces received (including spaces, line feeds, and tabulations);
 then,
 * For `char`s, it extracts one character;
-* For `std::string`s, it extracts all characters before encountering another whitespace;
+* For `std::string`s, it extracts all characters before receiving another whitespace;
 * For `int`s and `double`s, it extracts a number in decimal representation;
 * For `bool`s, it extracts a single `0` or `1`, storing `false` and `true` respectively;
 
