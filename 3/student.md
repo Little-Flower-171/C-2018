@@ -20,10 +20,10 @@ std::cin >> a >> b;
 
 For different types of data, `>>` behaves differently; by default:
 
-It first discards any whitespaces encountered (including spaces, line feeds, and tabs);
+It first discards any whitespaces received (including spaces, line feeds, and tabulators);
 then,
 * For `char`s, it extracts one character;
-* For `std::string`s, it extracts all characters before encountering another whitespace;
+* For `std::string`s, it extracts all characters before receiving another whitespace;
 * For `int`s and `double`s, it extracts a number in decimal representation;
 * For `bool`s, it extracts a single `0` or `1`, storing `false` and `true` respectively;
 
@@ -126,3 +126,19 @@ if (op == '+') {
     // division
 }
 ```
+
+## Words
+
+Word | Meaning | Pronunciation
+--- | --- | ---
+extract | 提取 | /ɪkˈstrækt/
+homogeneous | 同构的 | BrE /ˌhɒməˈdʒiːniəs/ AmE /ˌhoʊməˈdʒiːniəs/
+discard | 丢弃 | BrE /dɪsˈkɑːd/ AmE /dɪsˈkɑːrd/
+whitespace | 空白符 | /ˈwaɪtspeɪs/
+tabulator | Tab键 | /ˈtæbjuleɪtə(r)/
+function | 函数 | /ˈfʌŋkʃn/
+prompt | 提示；提醒 | BrE /prɒmpt/ AmE /prɑːmpt/
+workaround | 变通方法 | BrE /ˈwɜːkəraʊnd/ AmE /ˈwɜːrkəraʊnd/
+guarantee | 保证 | /ˌɡærənˈtiː/
+hint | 提示；窍门 | /hɪnt/
+parse | 分析 | BrE /pɑːz/ AmE /pɑːrs/

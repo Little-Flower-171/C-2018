@@ -83,3 +83,38 @@ Then, on standard error stream:
 The denominator is 0!
 Is your brain impaired, Little Flower?
 ```
+
+## Words
+
+Word | Meaning | Pronunciation
+--- | --- | ---
+stream | 流 | /stri:m/
+console | 控制台 | BrE /ˈkɒnsəʊl/ AmE /ˈkɑːnsoʊl/
+application | 应用程序 | /ˌæplɪˈkeɪʃn/
+execute | 执行 | /ˈeksɪkjuːt/
+manage | 管理 | /ˈmænɪdʒ/
+standard | 标准 | BrE /ˈstændəd/ AmE /ˈstændərd/
+sequence | 序列 | /ˈsiːkwəns/
+file | 文件 | /faɪl/
+string | 字符串 | /strɪŋ/
+code | 代码 | BrE /kəʊd/ AmE /koʊd/
+library | 库 | BrE /ˈlaɪbrəri; ˈlaɪbri/ AmE /ˈlaɪbreri/
+object | 对象 | BrE /ˈɒbdʒɪkt/ AmE /ˈɑːbdʒekt; ˈɑːbdʒɪkt/
+access | 访问 | /ˈækses/
+operator | 运算符 | BrE /ˈɒpəreɪtə(r)/ AmE /ˈɑːpəreɪtər/
+insert | 插入 | BrE /ɪnˈsɜːt/ AmE /ɪnˈsɜːrt/
+data | 数据 | /ˈdeɪtə/ BrE also /ˈdɑːtə/ AmE also /ˈdætə/
+term | 项 | BrE /tɜːm/ AmE /tɜːrm/
+type | 类型 | /taɪp/
+default | 默认 | /dɪˈfɔːlt; ˈdiːfɔːlt/
+representation | 表示形式 | /ˌreprɪzenˈteɪʃn/
+convert | 转换 | BrE /kənˈvɜːt/ AmE /kənˈvɜːrt/
+variable | 变量 | BrE /ˈveəriəbl/ AmE /ˈveriəbl; ˈværiəbl/
+expression | 表达式 | /ɪkˈspreʃn/
+print | 打印 | /prɪnt/
+value | 值 | /ˈvæljuː/
+result | 结果 | /rɪˈzʌlt/
+display | 显示 | /dɪˈspleɪ/
+style | 样式 | /staɪl/
+reproduce | 再现 | BrE /ˌriːprəˈdjuːs/ AmE /ˌriːprəˈduːs/
+
