@@ -24,7 +24,7 @@ for (int i = 1; i <= 10; ++i) {
 }
 ```
 
-It has the safe effect as:
+It has the same effect as:
 
 ```C++
 int i = 1;
@@ -159,7 +159,7 @@ else             std::cout << "???\n";
 In this case, the final branch will be executed
 if `n` is not 1 to 5.
 
-*What are the effects the following `if` selections?*
+*What are the effects of the following `if` selections?*
 
 ```
 int x; std::cin >> x;
@@ -273,7 +273,7 @@ using `if` to determine whether the number is a *Little Flower's number*.
 ### 2. Virus infected
 
 Little Flower's virtual machine is infected by a virus called "Minceraft" (not "Minecraft").
-Minceraft replaces every lower-case vowel letter (a, e, i, o, or u) into a "x".
+Minceraft replaces every lower-case vowel letter (a, e, i, o, or u) by a "x".
 
 Your task is to write a mini-Minceraft.
 
