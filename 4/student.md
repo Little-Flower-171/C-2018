@@ -341,3 +341,26 @@ std::getline(std::cin, s); // reads a line
 #### Hints
 
 You do not actually need to store the entire text.
+
+## Words
+
+Word | Meaning | Pronunciation
+--- | --- | ---
+iteration | 迭代 | /ˌɪtəˈreɪʃn/
+selection | 选择 | /sɪˈlekʃn/
+verbose | 冗长的 | BrE /vɜːˈbəʊs/ AmE /vɜːrˈboʊs/
+loop | 循环 | /luːp/
+effect | 效果 | /ɪˈfekt/
+range | 范围 | /reɪndʒ/
+base | 基于 | /beɪs/
+semicolon | 分号（字符） | BrE /ˌsemiˈkəʊlən/ AmE /ˈsemikoʊlən/
+condition | 条件 | /kənˈdɪʃn/
+branch | 分支 | BrE /brɑːntʃ/ AmE /bræntʃ/
+switch | 开关 | /swɪtʃ/
+case | 情况 | /keɪs/
+equality | 相等性 | BrE /iˈkwɒləti/ AmE /iˈkwɑːləti/
+efficient | 高效的 | /ɪˈfɪʃnt/
+virus | 病毒 | /ˈvaɪrəs/
+alphanumeric | 字母或数字 | BrE /ˌælfənjuːˈmerɪk/ AmE /ˌælfənuːˈmerɪk/
+doctor | 篡(cuɑ̀n)改 | BrE /ˈdɒktə(r)/ AmE /ˈdɑːktər/
+store | 存储 | /stɔː(r)/
