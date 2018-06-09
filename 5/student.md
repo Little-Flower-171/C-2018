@@ -16,6 +16,8 @@ Value | Explanation
 ``std::ios_base::failbit`` | input/output operation failed (formatting or extraction error)
 ``std::ios_base::eofbit`` | associated input sequence has reached end-of-file
 
+`std::ios_base::iostate` is a **bitmask** type. *What is a bitmask type?*
+
 *What is end-of-file (EOF)?*
 
 When ``eofbit`` is set, ``failbit`` is set together;
@@ -84,8 +86,6 @@ which is far less likely to fail.
 If the state of it is not ``goodbit``, **any I/O operation on one stream becomes a no-op.**
 Don't get trapped by this!
 
-### ``failbit``
-
 ``failbit`` is set by operators ``<<`` and ``>>`` to indicate format error:
 
 ```C++
@@ -101,4 +101,21 @@ Executing: (input is marked **bold**)
 Trying to extract an integer,
 `std::cin` saw `T` and set `failbit`.
 
-{{TODO}}
+`badbit` is set to indicate irrecoverable serious errors.
+
+`eofbit` is set when EOF is reached:
+
+```C++
+std::cout << "Enter an integer: ";
+int a;
+std::cin >> a;
+```
+
+Executing: (input is marked **bold**)
+
+`Enter an integer: `**`<EOF>`**
+
+Trying to extract an integer,
+`std::cin` saw EOF and set both `eofbit` and `failbit`.
+
+## Loop input
