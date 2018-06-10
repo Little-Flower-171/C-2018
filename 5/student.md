@@ -83,7 +83,7 @@ For example, after ``std::cin`` met something wrong, you can still use ``std::co
 after ``std::cout`` failed to output, you can still use ``std::cerr`` to report error,
 which is far less likely to fail.
 
-If the state of it is not ``goodbit``, **any I/O operation on one stream becomes a no-op.**
+If the state of it is not ``goodbit``, **any I/O operation on one stream is directly ignored.**
 Don't get trapped by this!
 
 ``failbit`` is set by operators ``<<`` and ``>>`` to indicate format error:
