@@ -83,7 +83,7 @@ For example, after ``std::cin`` met something wrong, you can still use ``std::co
 after ``std::cout`` failed to output, you can still use ``std::cerr`` to report error,
 which is far less likely to fail.
 
-If the state of it is not ``goodbit``, **any I/O operation on one stream is directly ignored.**
+If the state of it is not ``goodbit``, **any I/O operation on one stream becomes a no-op.**
 Don't get trapped by this!
 
 ``failbit`` is set by operators ``<<`` and ``>>`` to indicate format error:
@@ -224,7 +224,7 @@ Update log:
 
 #### Program properties
 
-- Program name: virus
+- Program name: virus2
 - Time limit: 1 second
 - Memory limit: 512 megabytes
 
@@ -238,6 +238,8 @@ Text doctored by Minceraft 2.0,
 followed by statistics of the format
 
 `X rxplxcxd `*`n`*` vxwxl lxttxrs wxth x "x".`
+
+The statistical text itself is not considered doctored.
 
 #### Sample input
 
@@ -255,6 +257,67 @@ X xsxd tx rxlx thx wxrld,
 Chxnks wxxld lxxd whxn X gxvx thx wxrld.
 Nxw xvxry nxght X gx stxw xwxy,
 Hxdx frxm thx mxbs X xsxd tx slxy.
-
+X rxplxcxd 38 vxwxl lxttxrs wxth x "x".
 ```
 
+### 2. Square roots
+
+Write a program that repeatedly calculates the square roots of given numbers.
+
+#### Program properties
+
+- Program name: sqrt
+- Time limit: 1 second
+- Memory limit: 512 megabytes
+
+#### I/O format
+
+Prompt `Number: ` and input a decimal (representable by `double`,)
+give its principal square root (need not be very accurate.)
+If input is negative or is of wrong format,
+ignore the **whole line** and prompt again.
+Process until EOF is reached.
+
+#### Sample I/O
+
+```
+Number: 256
+Square root: 16
+Number: 2
+Square root: 1.41421
+Number: -256
+Imaginary numbers are not supported.
+Number: 0
+Square root: 0
+Number: two hundred and fifty-six
+This is not a number.
+Number: <EOF>
+Bye.
+```
+
+#### Hint
+
+The *standard library* provides a function `sqrt`. `#include <cmath>` to access it.
+
+## Words
+
+Word | Meaning | Pronunciation
+--- | --- | ---
+error | 错误 | /ˈerə(r)/
+state | 状态 | /steɪt/
+status | 状态 | /ˈsteɪtəs/ AmE also /ˈstætəs/
+flag | 信号 | /flæɡ/
+attribute | 属性 | /ˈætrɪbjuːt/
+recover | 恢复 | /rɪˈkʌvə(r)/
+bitmask | 位掩码 | BrE /bɪt mɑːsk/ AmE /bɪt mæsk/
+call | 调用 | /kɔːl/
+directive | 指示 | /dəˈrektɪv; dɪˈrektɪv; daɪˈrektɪv/
+compile | 编译 | /kəmˈpaɪl/
+separate | adj. 单独的 | /ˈseprət/
+indicate | 指示 | /ˈɪndɪkeɪt/
+punctuation | 标点 | /ˌpʌŋktʃuˈeɪʃn/
+iterate | 迭代 | /ˈɪtəreɪt/
+process | 处理 | BrE /ˈprəʊses/ AmE /ˈprɑːses; ˈproʊses/
+statistics | 统计资料 | /stəˈtɪstɪks/
+represent | 表示 | /ˌreprɪˈzent/
+accurate | 精确的 | /ˈækjərət/
