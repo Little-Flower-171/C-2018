@@ -119,3 +119,91 @@ Trying to extract an integer,
 `std::cin` saw EOF and set both `eofbit` and `failbit`.
 
 ## Loop input
+
+### Issue 1
+
+Given an article as input,
+count the number of alphanumerics, spaces, punctuations and line feeds
+(there are no other characters.)
+
+We can iterate to read in every character and analyze it,
+until EOF is reached. We do it like this (wrong:)
+
+```C++
+#include <iostream>
+#include <cctype> // what is this?
+
+int main()
+{
+    char c;
+    int alnum = 0, space = 0, punct = 0, line_feed = 0;
+    while (std::cin.good()) {
+        std::cin >> c;
+             if (c == '\n')       ++line_feed;
+        else if (c == ' ' )       ++space;
+        else if (std::isalnum(c)) ++alnum;
+        else if (std::ispunct(c)) ++punct;
+    }
+    std::cout << alnum << " alphanumerics, "
+              << space << " spaces, "
+              << punct << " punctations, and "
+              << line_feed << " line feeds\n";
+}
+```
+
+Unfortunately, this does not work properly.
+*What's wrong? How to fix?*
+
+In fact, we usually write like this:
+
+```C++
+#include <iostream>
+#include <cctype>
+
+int main()
+{
+    int alnum = 0, space = 0, punct = 0, line_feed = 0;
+    for (char c; std::cin.get(c);) { //what does it mean?
+             if (c == '\n')       ++line_feed;
+        else if (c == ' ' )       ++space;
+        else if (std::isalnum(c)) ++alnum;
+        else if (std::ispunct(c)) ++punct;
+    }
+    std::cout << alnum << " alphanumerics, "
+              << space << " spaces, "
+              << punct << " punctations, and "
+              << line_feed << " line feeds\n";
+}
+```
+
+### Issue 2
+
+Given a number of data, read as many integers
+(within the range of `int`)
+as possible.
+Then output the largest among them.
+For example, given input
+
+```
+1 9 2 8 3 7 4 6 9.56 40
+```
+
+Output should be `9` (neither `9.56` nor `40`.)
+
+Note that we can read until `std::cin.fail()`.
+
+We can write like this:
+
+```C++
+#include <iostream>
+#include <limits> //what is this?
+
+int main()
+{
+    int max = std::numeric_limits<int>::min(); //why is max initially set to the minimum possible value?
+    for (int x; std::cin >> x;) {
+        if (x > max) max = x;
+    }
+    std::cout << "The maximum among these numbers is " << max << ".\n";
+}
+```
