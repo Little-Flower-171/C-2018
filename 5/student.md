@@ -207,3 +207,54 @@ int main()
     std::cout << "The maximum among these numbers is " << max << ".\n";
 }
 ```
+
+## Examples
+
+### 1. Minceraft v2.0
+
+[Minceraft](https://github.com/Little-Flower-171/C-2018/blob/master/4/student.md#2-virus-infected)
+has been updated to v2.0.
+
+Update log:
+
+- It can process full text.
+- In addition to replacing every lower-case vowel letter by a "x",
+  it replaces every upper-case vowel letter by a "X".
+- After doctoring, it reports how many letters it has replaced.
+
+#### Program properties
+
+- Program name: virus
+- Time limit: 1 second
+- Memory limit: 512 megabytes
+
+#### Input format
+
+Text consisting of alphanumerics, spaces, punctations and line feeds.
+
+#### Output format
+
+Text doctored by Minceraft 2.0,
+followed by statistics of the format
+
+`X rxplxcxd `*`n`*` vxwxl lxttxrs wxth x "x".`
+
+#### Sample input
+
+```
+I used to rule the world,
+Chunks would load when I gave the world.
+Now every night I go stow away,
+Hide from the mobs I used to slay.
+```
+
+#### Sample output
+
+```
+X xsxd tx rxlx thx wxrld,
+Chxnks wxxld lxxd whxn X gxvx thx wxrld.
+Nxw xvxry nxght X gx stxw xwxy,
+Hxdx frxm thx mxbs X xsxd tx slxy.
+
+```
+
