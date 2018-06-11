@@ -340,7 +340,11 @@ std::getline(std::cin, s); // reads a line
 
 #### Hints
 
-You do not actually need to store the entire text.
+1. You do not actually need to store the entire text.
+2. If your program prints one less character than desired,
+   remember this: (from [here](https://github.com/Little-Flower-171/C-2018/blob/master/3/student.md#input-stream-objects))
+   
+   > Note that it does not discard any more whitespaces after it has extracted the data.
 
 ## Words
 
