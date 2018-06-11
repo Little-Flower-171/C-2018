@@ -3,6 +3,7 @@
 int main()
 {
     int n; std::cin >> n;
+    std::cin.get(); //eat line feed character
     for (int i=0; i<n; ++i) {
         char c; std::cin.get(c);
         switch (c) {
