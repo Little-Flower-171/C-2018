@@ -14,6 +14,7 @@ int main()
         case 'A': case 'E': case 'I': case 'O': case 'U':
             std::cout << 'X'; ++count;
             break;
+        }
     }
     std::cout << "X rxplxcxd " << count << " vxwxl lxttxrs wxth x \"x\".\n"; //note the use of escape characters    
 }
