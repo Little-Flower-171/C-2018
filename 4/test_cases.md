@@ -96,6 +96,7 @@ N1x2w3 4x5v6x7r8y9 0n1x2g3h4t5 6I7 8g9x0 stxw xwxy
 #### Input
 
 ```
+50
 Wish I could turn back the time 233333333333333333
 ```
 
