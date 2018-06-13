@@ -4,9 +4,12 @@ Word | Meaning| Pronunciation
 --- | --- | ---
 accept | 接受 | /əkˈsept/
 access | 访问 | /ˈækses/
+accumulation | 积累 | /əˌkjuːmjəˈleɪʃn/
 accurate | 精确的 | /ˈækjərət/
 alphanumeric | 字母或数字 | BrE /ˌælfənjuːˈmerɪk/ AmE /ˌælfənuːˈmerɪk/
 application | 应用程序 | /ˌæplɪˈkeɪʃn/
+arithmetical | 算术的 | /ˌærɪθˈmetɪkl/
+assignment | 赋值 | /əˈsaɪnmənt/
 attribute | 属性 | /ˈætrɪbjuːt/
 base | 基于 | /beɪs/
 bitmask | 位掩码 | BrE /bɪt mɑːsk/ AmE /bɪt mæsk/
@@ -16,6 +19,7 @@ call | 调用 | /kɔːl/
 case | 情况 | /keɪs/
 code | 代码 | BrE /kəʊd/ AmE /koʊd/
 compile | 编译 | /kəmˈpaɪl/
+compound | 复合的 | BrE /ˈkɒmpaʊnd/ AmE /ˈkɑːmpaʊnd/ 
 condition | 条件 | /kənˈdɪʃn/
 console | 控制台 | BrE /ˈkɒnsəʊl/ AmE /ˈkɑːnsoʊl/
 content | 内容 | BrE /ˈkɒntent/ AmE /ˈkɑːntent/
@@ -30,6 +34,7 @@ doctor | 篡(cuɑ̀n)改 | BrE /ˈdɒktə(r)/ AmE /ˈdɑːktər/
 effect | 效果 | /ɪˈfekt/
 efficient | 高效的 | /ɪˈfɪʃnt/
 equality | 相等性 | BrE /iˈkwɒləti/ AmE /iˈkwɑːləti/
+equivalent | 等价的 | /ɪˈkwɪvələnt/
 error | 错误 | /ˈerə(r)/
 execute | 执行 | /ˈeksɪkjuːt/
 expression | 表达式 | /ɪkˈspreʃn/
