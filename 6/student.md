@@ -26,9 +26,12 @@ Compound assignment | Equivalent to
 
 where `x` is an appropriate object and `a` an appropriate value.
 
+Compound assignments are less verbose than plain ones,
+and, sometimes *more efficient*.
+
 ## Accumulation
 
-**Accumulation** or refers to the operation to fold a sequence of values into one single value.
+**Accumulation** refers to the operation to fold a sequence of values into one single value.
 
 Let's take a look at the most common kinds of accumulations --
 calculating the sum:
@@ -51,9 +54,77 @@ for (int x; std::cin >> x;) {
 
 ## Examples
 
+### 1. Number accumulator
+
+Calculate the sum, product, maximum and minimum of given numbers.
+
+#### I/O format
+
+Until EOF or failure:
+
+1. Prompt `Number: `;
+2. Input an integer *a*<sub>*i*</sub>. (1 ≤ *a*<sub>*i*</sub> ≤ 100 for 1 ≤ *i* ≤ *n*)
+
+Where *i* is from 1 to *n*, the number of numbers input.
+
+After EOF or failure:
+
+Output
+
+```
+sum: <sum>
+product: <product>
+maximum: <maximum>
+minimum: <minimum>
+```
+
+Where
+
+- `<sum>` is *a*<sub>1</sub> + *a*<sub>2</sub> + *a*<sub>3</sub> + ... + *a*<sub>*n*</sub>
+- `<product>` is *a*<sub>1</sub> ⋅ *a*<sub>2</sub> ⋅ *a*<sub>3</sub> ⋅ ... ⋅ *a*<sub>*n*</sub>
+- `<maximum>` is max(*a*<sub>1</sub>, *a*<sub>2</sub>, *a*<sub>3</sub>, ..., *a*<sub>*n*</sub>)
+- `<minimum>` is min(*a*<sub>1</sub>, *a*<sub>2</sub>, *a*<sub>3</sub>, ..., *a*<sub>*n*</sub>)
+
+All the four are guaranteed to be under 10<sup>9</sup>.
+
+If *n* = 0, sum is 0 and product is 1, and there does not exist maximum or minimum.
+
+#### Sample I/O
+
+```
+Number: 1
+Number: 2
+Number: goodbye
+sum: 3
+product: 2
+maximum: 2
+minimum: 1
+```
+
+### 2. Text reverser
+
+Given a string consisting of no more than 255 characters,
+including alphanumerics, spaces, and punctuations,
+output its reverse.
+
+#### Sample input
+
+```
+Spread your wings across the universe, it's your time to, it's your time to fly.
+```
+
+#### Sample output
+
+```
+.ylf ot emit ruoy s'ti ,ot emit ruoy s'ti ,esrevinu eht ssorca sgniw ruoy daerpS
+```
+
 ## Words
 
 Word | Meaning | Pronunciation
 --- | --- | ---
 compound | 复合的 | BrE /ˈkɒmpaʊnd/ AmE /ˈkɑːmpaʊnd/ 
 assignment | 赋值 | /əˈsaɪnmənt/
+arithmetical | 算术的 | /ˌærɪθˈmetɪkl/
+equivalent | 等价的 | /ɪˈkwɪvələnt/
+accumulation | 积累 | /əˌkjuːmjəˈleɪʃn/
