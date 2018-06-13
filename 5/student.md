@@ -313,7 +313,7 @@ bitmask | 位掩码 | BrE /bɪt mɑːsk/ AmE /bɪt mæsk/
 call | 调用 | /kɔːl/
 directive | 指示 | /dəˈrektɪv; dɪˈrektɪv; daɪˈrektɪv/
 compile | 编译 | /kəmˈpaɪl/
-separate | adj. 单独的 | /ˈseprət/
+separate | 单独的 | /ˈseprət/
 indicate | 指示 | /ˈɪndɪkeɪt/
 punctuation | 标点 | /ˌpʌŋktʃuˈeɪʃn/
 iterate | 迭代 | /ˈɪtəreɪt/
