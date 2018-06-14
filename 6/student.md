@@ -19,6 +19,7 @@ provided that ```x``` is an appropriate object.
 There are similar **compound assignment operators** for arithmetical operations:
 
 Compound assignment | Equivalent to
+--- | ---
 `x -= a;` | `x = x-a;`
 `x *= a;` | `x = x*a;`
 `x /= a;` | `x = x/a;`
