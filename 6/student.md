@@ -58,6 +58,12 @@ for (int x; std::cin >> x;) {
 
 Calculate the sum, product, maximum and minimum of given numbers.
 
+#### Program properties
+
+- Program name: accum
+- Time limit: 1 second
+- Memory limit: 512 megabytes
+
 #### I/O format
 
 Until EOF or failure:
@@ -106,6 +112,12 @@ minimum: 1
 Given a string consisting of no more than 255 characters,
 including alphanumerics, spaces, and punctuations,
 output its reverse.
+
+#### Program properties
+
+- Program name: rev
+- Time limit: 1 second
+- Memory limit: 512 megabytes
 
 #### Sample input
 
