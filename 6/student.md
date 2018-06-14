@@ -70,7 +70,7 @@ Calculate the sum, product, maximum and minimum of given numbers.
 Until EOF or failure:
 
 Input an integer *a*<sub>*i*</sub> (1 ≤ *a*<sub>*i*</sub> ≤ 100 for 1 ≤ *i* ≤ *n*),
-where *i* is from 1 to *n*, the number of numbers input.
+where *i* is from 1 to *n*, the number of numbers input. (0 ≤ *n* ≤ 10<sup>6</sup>)
 
 After EOF or failure:
 
