@@ -69,10 +69,8 @@ Calculate the sum, product, maximum and minimum of given numbers.
 
 Until EOF or failure:
 
-1. Prompt `Number: `;
-2. Input an integer *a*<sub>*i*</sub>. (1 ≤ *a*<sub>*i*</sub> ≤ 100 for 1 ≤ *i* ≤ *n*)
-
-Where *i* is from 1 to *n*, the number of numbers input.
+Input an integer *a*<sub>*i*</sub> (1 ≤ *a*<sub>*i*</sub> ≤ 100 for 1 ≤ *i* ≤ *n*),
+where *i* is from 1 to *n*, the number of numbers input.
 
 After EOF or failure:
 
@@ -96,12 +94,16 @@ All the four are guaranteed to be under 10<sup>9</sup>.
 
 If *n* = 0, sum is 0 and product is 1, and there does not exist maximum or minimum.
 
-#### Sample I/O
+#### Sample Input
 
 ```
-Number: 1
-Number: 2
-Number: goodbye
+1
+2
+```
+
+#### Sample Output
+
+```
 sum: 3
 product: 2
 maximum: 2
