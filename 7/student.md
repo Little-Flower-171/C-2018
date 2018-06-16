@@ -1,13 +1,26 @@
 # C++ Training Lesson 7 -- Arrays
 
-## `std::vector`
+## Issue
 
-Suppose you are asked to write a program that gets *n* numbers and prints them in inverse order.
+Write a program that prints a sequence of decimals in reverse order.
+
+### Sample input
+
+```
+1.41 2.72 3.14
+```
+
+### Sample output
+
+```
+3.14 2.72 1.41
+```
+
 In this situation, input-and-processing does not make sense anymore.
 You just have no way but storing these numbers.
 But since it is impossible to declare *n* variables, how to store them?
 
-The answer is **to use `std::vector`**.
+## `std::vector`
 
 `std::vector` is a **template** (neither a type nor an object) provided by the standard library.
 It encapsulates **dynamic-size array**s.
@@ -33,3 +46,36 @@ The type can be anything, such as `int`, `std::string`, or `std::vector<int>`.
 For example, `std::vector<double>` is an array of `double`s.
 
 (Note: `std::vector` optionally accepts a second argument; by now let's skip that.)
+
+## Back to the issue
+
+```C++
+#include <iostream>
+#include <vector> //for std::vector
+
+int main()
+{
+    std::vector<double> numbers; //numbers is initially empty
+    for (double x; std::cin >> x;) {
+        numbers.push_back(x);
+    }
+
+    for (int i = numbers.size(); i--;) { //?
+        std::cout << numbers[i] << " ";
+    }
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
