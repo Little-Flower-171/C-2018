@@ -47,7 +47,7 @@ For example, `std::vector<double>` is an array of `double`s.
 
 (Note: `std::vector` optionally accepts a second argument; by now let's skip that.)
 
-### Construct a `std::vector`
+### Constructing
 
 There are many ways to construct a `std::vector`:
 
@@ -97,7 +97,7 @@ Moving is much more efficient than copying if there are a lot of elements.
 
 To access `std::move`, include the header `<utility>`.
 
-### Assign a `std::vector`
+### Assigning
 
 A `std::vector` can be assigned another `std::vector` or a list of elements using operator `=`:
 
@@ -119,7 +119,7 @@ vec8.assign({10, 20}); //vec8 now has 2 elements, 10 and 20
 
 Note: assignment is different from construction. *How are they different?*
 
-### Access the elements of a `std::vector`
+### Accessing the elements
 
 You can use brackets `[]` to access individual elements:
 
@@ -142,9 +142,30 @@ Convenience function | Equivalent to
 
 If `vec` is empty, **undefined behavior** takes place.
 
-### Resize a `std::vector`
+### Appending to the end
 
-TODO
+To add an element to the end:
+
+```C++
+vec.push_back(v); //add v to the end of vec
+vec.emplace_back(v1, v2, ...); //same as vec.push_back(T{v1, v2, ...}) where T is the type of element
+```
+
+To remove the last element:
+
+```C++
+vec.pop_back(); //remove the last element
+```
+
+### Other operations
+
+Operation | Effect
+--- | ---
+`vec.size()` | returns the size of `vec`
+`vec.empty()` | returns `vec.size() == 0` (a `bool` value)
+`vec.clear()` | clear the contents
+`vec.resize(n)` | if `vec.size() > n`, reduce `vec` to its first `n` elements; if `vec.size() < n`, add `n - vec.size()` **default-constructed** elements
+`vec.resize(n, v)` | if `vec.size() > n`, reduce `vec` to its first `n` elements; if `vec.size() < n`, add `n - vec.size()` elements, each of value `v`
 
 ## Back to the issue
 
