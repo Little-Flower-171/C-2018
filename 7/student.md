@@ -97,9 +97,31 @@ Moving is much more efficient than copying if there are a lot of elements.
 
 To access `std::move`, include the header `<utility>`.
 
+### Assign a `std::vector`
+
+A `std::vector` can be assigned another `std::vector` or a list of elements using operator `=`:
+
+```C++
+vec7 = vec3; //vec7 now has 10 elements, each has value 233
+             //so does vec3
+vec8 = std::move(vec4); //vec8 now has 4 elements, 10, 20, 30, and 40
+                        //vec4 is now empty
+vec4 = {100, 200, 300, 400}; //vec4 has new elements
+                             //vec8 is unaffected
+```
+
+You can also use the `assign` function:
+
+```C++
+vec7.assign(10, 20);   //vec7 now has 10 elements, each has value 20
+vec8.assign({10, 20}); //vec8 now has 2 elements, 10 and 20
+```
+
+Note: assignment is different from construction. *How are they different?*
+
 ### Resize a `std::vector`
 
-
+TODO
 
 ## Back to the issue
 
