@@ -310,3 +310,20 @@ copy | 复制 | BrE /ˈkɒpi/ AmE /ˈkɑːpi/
 move | 移动 | /muːv/
 header | 头文件 | /ˈhedə(r)/
 utility | 实用程序 | /juːˈtɪləti/
+assign | 赋值 | /əˈsaɪn/
+list | 列表 | /lɪst/
+bracket | 方括号 | /ˈbrækɪt/
+individual | 单独的 | /ˌɪndɪˈvɪdʒuəl/
+position | 位置 | /pəˈzɪʃn/
+define | 定义 | /dɪˈfaɪn/
+behavior | 行为 | /bɪˈheɪvjə(r)/
+append | 追加 | /əˈpend/
+emplace | 放置 | /ɪmˈpleɪs/
+remove | 移除 | /rɪˈmuːv/
+operation | 操作 | BrE /ˌɒpəˈreɪʃn/ AmE /ˌɑːpəˈreɪʃn/
+clear | 清除 | BrE /klɪə(r)/ AmE /klɪr/
+reduce | 缩小 | BrE /rɪˈdjuːs/ AmE /rɪˈduːs/
+add | 增加 | /æd/
+database | 数据库 | /ˈdeɪtəbeɪs/ AmE also /ˈdætəbeɪs/
+query | 查询 | BrE /ˈkwɪəri/ AmE /ˈkwɪri/
+perform | 执行 | BrE /pəˈfɔːm/ AmE /pərˈfɔːrm/
