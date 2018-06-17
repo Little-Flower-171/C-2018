@@ -157,6 +157,15 @@ To remove the last element:
 vec.pop_back(); //remove the last element
 ```
 
+### Iterating over
+
+You can use a **range-based `for` loop** to iterate over a `std::vector`:
+
+```C++
+for (int x : vec)
+    std::cout << x << "\n";
+```
+
 ### Other operations
 
 Operation | Effect
@@ -185,17 +194,4 @@ int main()
     }
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
 
