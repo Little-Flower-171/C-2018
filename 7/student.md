@@ -47,6 +47,60 @@ For example, `std::vector<double>` is an array of `double`s.
 
 (Note: `std::vector` optionally accepts a second argument; by now let's skip that.)
 
+### Construct a `std::vector`
+
+There are many ways to construct a `std::vector`:
+
+- You can construct an empty `std::vector`:
+
+```C++
+std::vector<int> vec1; //vec1 is empty
+```
+
+- You can specify its size at construction:
+
+```C++
+std::vector<int> vec2(10); //vec2 has 10 elements
+                           //each element has value zero
+std::vector<int> vec3(10, 233); //vec3 has 10 elements
+                                //each element has value 233
+```
+
+- You can specify its elements:
+
+```C++
+std::vector<int> vec4{10, 20, 30, 40}; //vec4 has 4 elements:
+                                       //10, 20, 30, 40 respectively
+```
+
+When you specify the size, use parentheses;
+otherwise, use braces.
+For example:
+
+```C++
+std::vector<int> vec5(10, 20); //vec5 has 10 elements
+                               //each element has value 20
+std::vector<int> vec6{10, 20}; //vec6 has 2 elements
+                               //10 and 20 respectively
+```
+
+`std::vector`s of the same type can be copied or moved:
+
+```C++
+std::vector<int> vec7 = vec5; //vec7 has 10 elements, each has value 20
+                              //so does vec5
+std::vector<int> vec8 = std::move(vec6); //vec8 has 2 elements, 10 and 20 respectively
+                                         //vec6 is empty now
+```
+
+Moving is much more efficient than copying if there are a lot of elements.
+
+To access `std::move`, include the header `<utility>`.
+
+### Resize a `std::vector`
+
+
+
 ## Back to the issue
 
 ```C++
