@@ -279,3 +279,34 @@ All prime numbers not greater than *n*, each within a line.
 11
 13
 ```
+
+## Words
+
+Word | Meaning | Pronunciation
+--- | --- | ---
+array | 数组 | /əˈreɪ/
+reverse | 相反 | BrE /rɪˈvɜːs/ AmE /rɪˈvɜːrs/
+declare | 声明 | BrE /dɪˈkleə(r)/ AmE /dɪˈkler/
+vector | 向量 | /ˈvektə(r)/
+template | 模(mú)板 | /ˈtempleɪt/
+encapsulate | 封装 | /ɪnˈkæpsjuleɪt/
+dynamic | 动态的 | /daɪˈnæmɪk/
+container | 容器 | /kənˈteɪnə(r)/
+element | 元素 | /ˈelɪmənt/
+index | 编号 | /ˈɪndeks/
+static | 静态的 | /ˈstætɪk/
+expand | 扩大 | /ɪkˈspænd/
+contract | 缩小 | /kənˈtrækt/
+modify | 修改 | BrE /ˈmɒdɪfaɪ/ AmE /ˈmɑːdɪfaɪ/
+argument | 参数 | BrE /ˈɑːɡjumənt/ AmE /ˈɑːrɡjumənt/
+specify | 说明 | /ˈspesɪfaɪ/
+angle bracket | 尖角括号 | /ˈæŋɡl ˈbrækɪt/
+optional | 可选的 | BrE /ˈɒpʃənl/ AmE /ˈɑːpʃənl/
+construct | 构造 | /kənˈstrʌkt/
+parenthesis | （圆）括号（单数） | /pəˈrenθəsɪs/
+parentheses | （圆）括号（复数） | /pəˈrenθəsiːz/
+brace | 花括号 | /breɪs/
+copy | 复制 | BrE /ˈkɒpi/ AmE /ˈkɑːpi/
+move | 移动 | /muːv/
+header | 头文件 | /ˈhedə(r)/
+utility | 实用程序 | /juːˈtɪləti/
