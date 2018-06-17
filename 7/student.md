@@ -119,6 +119,29 @@ vec8.assign({10, 20}); //vec8 now has 2 elements, 10 and 20
 
 Note: assignment is different from construction. *How are they different?*
 
+### Access the elements of a `std::vector`
+
+You can use brackets `[]` to access individual elements:
+
+```C++
+std::cout << vec7[0]; //outputs 20
+std::cin  >> vec7[1]; //inputs a number and store it into vec7's element #1
+```
+
+Note: elements are indexed from 0 to *n*-1 rather than 1 to *n*,
+where *n* is the size of the vector.
+If you provide a position out of the container,
+**undefined behavior** takes place.
+
+There are two convenience functions: (assuming `vec` is an appropriate vector)
+
+Convenience function | Equivalent to
+--- | ---
+`vec.front()` | `vec[0]`
+`vec.back()` | `vec[vec.size() - 1]`
+
+If `vec` is empty, **undefined behavior** takes place.
+
 ### Resize a `std::vector`
 
 TODO
