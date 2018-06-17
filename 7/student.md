@@ -195,3 +195,87 @@ int main()
 }
 ```
 
+## Example
+
+### 1. Database
+
+Little Flower has a lot of data. Write a program for him to use as database.
+
+The database first gets the data.
+Then, *m* queries are performed.
+
+#### Program properties
+
+- Program name: database
+
+#### Input format
+
+Line # | Content
+--- | ---
+1 | A single integer *n*
+2 | Space-separated integers *a*<sub>1</sub>, *a*<sub>2</sub>, *a*<sub>3</sub>, ..., *a*<sub>*n*</sub>
+3 to *m*+2 | A single integer *i*
+
+#### Output format
+
+Line # | Content
+--- | ---
+1 to *m* | A single integer *a*<sub>*i*</sub>
+
+#### Ranges
+
+1 ≤ *m* ≤ 100,000
+1 ≤ *i* ≤ *n* ≤ 100,000
+0 ≤ *a*<sub>*i*</sub> ≤ 100 for 1 ≤ *i* ≤ *n*
+
+#### Sample input
+
+```
+5
+23333 32333 33233 33323 33332
+3
+2
+3
+3
+```
+
+#### Sample output
+
+```
+32333
+33233
+33233
+```
+
+### 2. Prime number
+
+Given a natural number *n*, print all the primes not greater than *n*.
+
+#### Input format
+
+A single integer *n*.
+
+#### Output format
+
+All prime numbers not greater than *n*, each within a line.
+
+#### Ranges
+
+1 ≤ *n* ≤ 1,000,000
+
+#### Sample input
+
+```
+15
+```
+
+#### Sample output
+
+```
+2
+3
+5
+7
+11
+13
+```
