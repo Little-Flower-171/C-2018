@@ -67,7 +67,31 @@ void message()
 }
 ```
 
-# TODO: other things
+### Function declaration
+
+All the information needed to call the function is shown in the first line of the definition. For example, according to
+
+```C++
+int square(int x)
+```
+
+we can call `square`:
+
+```C++
+int x = square(44);
+```
+
+We do not really need to know how `square` is implemented in order to call it. We merely need to know what arguments it takes and what it returns. C++ provides a way to show this information without specifying the function definition -- **function declaration**.
+
+```C++
+int square(int); //declare the function square
+```
+
+Note that the function declaration ends with a semicolon.
+
+To use a function, declare it or `#include` the header containing its **prototype**, and the definition of the function can be placed anywhere else in the program. The separation of prototype and definition is essential to large programs -- we use prototypes to keep the code simple, so that we can concentrate on a specific part.
+
+### Pass-by-value
 
 Note that the parameter is merely a variable; it does not differ from any other variable:
 
@@ -79,7 +103,7 @@ void incr(int x)
 }
 ```
 
-Suppose we use it like this:
+This is called **pass-by-value**. Suppose we use it like this:
 
 ```C++
 int x = 5;
@@ -88,3 +112,5 @@ std::cout << x << "\n"; //unfortunately, x is still 5
 ```
 
 If this had managed to increment `x`, what effect would `incr(1+1)` have had?
+
+(There are also ways to **pass-by-reference**. By now let's skip that.)
