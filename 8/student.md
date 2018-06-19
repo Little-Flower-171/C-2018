@@ -114,3 +114,29 @@ std::cout << x << "\n"; //unfortunately, x is still 5
 If this had managed to increment `x`, what effect would `incr(1+1)` have had?
 
 (There are also ways to **pass-by-reference**. By now let's skip that.)
+
+## Example
+
+### 1. Factorial
+
+You are providing a mathematical library and you find the following specification:
+
+> ```
+> long long fact(int x);
+> ```
+> *Requires:* `0 <= x && x <= 20`.
+> *Returns:* the factorial of `x`.
+
+Implement this function.
+
+#### Program properties
+
+- Program name: fact
+
+#### Notes
+
+You can assume the requisitions are met.
+
+### 2. Input
+
+TODO
