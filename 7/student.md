@@ -298,7 +298,6 @@ static | 静态的 | /ˈstætɪk/
 expand | 扩大 | /ɪkˈspænd/
 contract | 缩小 | /kənˈtrækt/
 modify | 修改 | BrE /ˈmɒdɪfaɪ/ AmE /ˈmɑːdɪfaɪ/
-argument | 参数 | BrE /ˈɑːɡjumənt/ AmE /ˈɑːrɡjumənt/
 specify | 说明 | /ˈspesɪfaɪ/
 angle bracket | 尖角括号 | /ˈæŋɡl ˈbrækɪt/
 optional | 可选的 | BrE /ˈɒpʃənl/ AmE /ˈɑːpʃənl/
