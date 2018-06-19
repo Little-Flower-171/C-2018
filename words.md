@@ -12,6 +12,7 @@ angle bracket | 尖角括号 | /ˈæŋɡl ˈbrækɪt/
 append | 追加 | /əˈpend/
 application | 应用程序 | /ˌæplɪˈkeɪʃn/
 argument | 参数 | BrE /ˈɑːɡjumənt/ AmE /ˈɑːrɡjumənt/
+argument | 参量；实参（实际参数） | BrE /ˈɑːɡjumənt/ AmE /ˈɑːrɡjumənt/
 arithmetical | 算术的 | /ˌærɪθˈmetɪkl/
 array | 数组 | /əˈreɪ/
 assign | 赋值 | /əˈsaɪn/
@@ -41,9 +42,11 @@ copy | 复制 | BrE /ˈkɒpi/ AmE /ˈkɑːpi/
 data | 数据 | /ˈdeɪtə/ BrE also /ˈdɑːtə/ AmE also /ˈdætə/
 database | 数据库 | /ˈdeɪtəbeɪs/ AmE also /ˈdætəbeɪs/
 decimal | 十进制 | /ˈdesɪml/
-declare | 声明 | BrE /dɪˈkleə(r)/ AmE /dɪˈkler/
+declaration | n. 声明 | /ˌdekləˈreɪʃn/
+declare | v. 声明 | BrE /dɪˈkleə(r)/ AmE /dɪˈkler/
 default | 默认 | /dɪˈfɔːlt; ˈdiːfɔːlt/
-define | 定义 | /dɪˈfaɪn/
+define | v. 定义 | /dɪˈfaɪn/
+definition | n. 定义 | /ˌdefɪˈnɪʃn/
 directive | 指示 | /dəˈrektɪv; dɪˈrektɪv; daɪˈrektɪv/
 discard | 丢弃 | BrE /dɪsˈkɑːd/ AmE /dɪsˈkɑːrd/
 display | 显示 | /dɪˈspleɪ/
@@ -70,9 +73,13 @@ guarantee | 保证 | /ˌɡærənˈtiː/
 header | 头文件 | /ˈhedə(r)/
 hint | 提示；窍门 | /hɪnt/
 homogeneous | 同构的 | BrE /ˌhɒməˈdʒiːniəs/ AmE /ˌhoʊməˈdʒiːniəs/
+implement | v. 实现；实施 | /ˈɪmplɪment/
+implementation | n. 实现；实施 | /ˌɪmplɪmenˈteɪʃn/
+increase | 增加 | /ɪnˈkriːs/
 index | 编号 | /ˈɪndeks/
 indicate | 指示 | /ˈɪndɪkeɪt/
 individual | 单独的 | /ˌɪndɪˈvɪdʒuəl/
+initialize | 初始化 | /ɪˈnɪʃəlaɪz/
 input | 输入 | /ˈɪnpʊt/
 insert | 插入 | BrE /ɪnˈsɜːt/ AmE /ɪnˈsɜːrt/
 iterate | 迭代 | /ˈɪtəreɪt/
@@ -95,6 +102,7 @@ operation | 操作 | BrE /ˌɒpəˈreɪʃn/ AmE /ˌɑːpəˈreɪʃn/
 operator | 运算符 | BrE /ˈɒpəreɪtə(r)/ AmE /ˈɑːpəreɪtər/
 optional | 可选的 | BrE /ˈɒpʃənl/ AmE /ˈɑːpʃənl/
 output | 输出 | /ˈaʊtpʊt/
+parameter | 参数；形参（形式参数） | /pəˈræmɪtə(r)/
 parentheses | （圆）括号（复数） | /pəˈrenθəsiːz/
 parenthesis | （圆）括号（单数） | /pəˈrenθəsɪs/
 parse | 分析 | BrE /pɑːz/ AmE /pɑːrs/
@@ -105,27 +113,36 @@ process | 处理 | BrE /ˈprəʊses/ AmE /ˈprɑːses; ˈproʊses/
 program | 程序 | BrE /ˈprəʊɡræm/ AmE /ˈproʊɡræm/
 prompt | 提示；提醒 | BrE /prɒmpt/ AmE /prɑːmpt/
 property | 性质 | BrE /ˈprɒpəti/ AmE /ˈprɑːpərti/
+prototype | 原型 | BrE /ˈprəʊtətaɪp/ AmE /ˈproʊtətaɪp/
 punctuation | 标点 | /ˌpʌŋktʃuˈeɪʃn/
 query | 查询 | BrE /ˈkwɪəri/ AmE /ˈkwɪri/
 range | 范围 | /reɪndʒ/
 recover | 恢复 | /rɪˈkʌvə(r)/
 reduce | 缩小 | BrE /rɪˈdjuːs/ AmE /rɪˈduːs/
+reference | 引用 | /ˈrefrəns/
 remove | 移除 | /rɪˈmuːv/
 represent | 表示 | /ˌreprɪˈzent/
 representation | 表示形式 | /ˌreprɪzenˈteɪʃn/
 reproduce | 再现 | BrE /ˌriːprəˈdjuːs/ AmE /ˌriːprəˈduːs/
+require | v. 要求 | /rɪˈkwaɪə(r)/
+requirement | n. 要求 | BrE /rɪˈkwaɪəmənt/ AmE /rɪˈkwaɪərmənt/
 result | 结果 | /rɪˈzʌlt/
+return | 返回 | BrE /rɪˈtɜːn/ AmE /rɪˈtɜːrn/
 reverse | 相反 | BrE /rɪˈvɜːs/ AmE /rɪˈvɜːrs/
 sample | 样例 | BrE /ˈsɑːmpl/ AmE /ˈsæmpl/
 selection | 选择 | /sɪˈlekʃn/
 semicolon | 分号（字符） | BrE /ˌsemiˈkəʊlən/ AmE /ˈsemikoʊlən/
 separate | adj. 单独的 | /ˈseprət/
 separate | v. 分隔 | /ˈsepəreɪt/
+separation | n. 分离 | /ˌsepəˈreɪʃn/
 sequence | 序列 | /ˈsiːkwəns/
+source | 源代码 | BrE /sɔːs/ AmE /sɔːrs/
 space | 空格（字符） | /speɪs/
-specify | 说明 | /ˈspesɪfaɪ/
+specification | n. 说明 | /ˌspesɪfɪˈkeɪʃn/
+specify | v. 说明 | /ˈspesɪfaɪ/
 standard | 标准 | BrE /ˈstændəd/ AmE /ˈstændərd/
 state | 状态 | /steɪt/
+statement | 语句 | /ˈsteɪtmənt/
 static | 静态的 | /ˈstætɪk/
 statistics | 统计资料 | /stəˈtɪstɪks/
 status | 状态 | /ˈsteɪtəs/ AmE also /ˈstætəs/
@@ -144,5 +161,6 @@ variable | 变量 | BrE /ˈveəriəbl/ AmE /ˈveriəbl; ˈværiəbl/
 vector | 向量 | /ˈvektə(r)/
 verbose | 冗长的 | BrE /vɜːˈbəʊs/ AmE /vɜːrˈboʊs/
 virus | 病毒 | /ˈvaɪrəs/
+warning | 警告 | BrE /ˈwɔːnɪŋ/ AmE /ˈwɔːrnɪŋ/
 whitespace | 空白符 | /ˈwaɪtspeɪs/
 workaround | 变通方法 | BrE /ˈwɜːkəraʊnd/ AmE /ˈwɜːrkəraʊnd/
