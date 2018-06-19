@@ -2,7 +2,7 @@
 
 ## Functions
 
-A function is a named sequence of **statement**s that optionally **return**s a result (called **return value**). The standard library provides a lot of useful functions (like `std::sqrt` and `std::move`), but we also need to write our own functions. For example:
+A function is a named sequence of **statement**s that optionally **return**s a result (called **return value**). The standard library provides a lot of useful functions (like `std::sqrt`), but we also need to write our own functions. For example:
 
 ```C++
 int square(int x) //returns the square of x
@@ -63,7 +63,7 @@ A function may take no argument. It may also return nothing:
 //no argument, no return value
 void message()
 {
-    std::cout << "It was the creepers and skeletons
+    std::cout << "It was the creepers and skeletons Blew down the doors and boxed us in\n";
 }
 ```
 
@@ -111,7 +111,7 @@ incr(x);
 std::cout << x << "\n"; //unfortunately, x is still 5
 ```
 
-If this had managed to increment `x`, what effect would `incr(1+1)` have had?
+If this had managed to increase `x`, what effect would `incr(1+1)` have had?
 
 (There are also ways to **pass-by-reference**. By now let's skip that.)
 
@@ -136,7 +136,7 @@ Implement this function.
 
 #### Notes
 
-You can assume the requisitions are met.
+You can assume the requirements are met.
 
 ### 2. Input
 
@@ -145,3 +145,26 @@ Write a function `get_ints` that takes no argument and returns a `std::vector<in
 #### Program properties
 
 - Source name: input
+
+## Words
+
+Word | Meaning | Pronunciation
+--- | --- | ---
+statement | 语句 | /ˈsteɪtmənt/
+return | 返回 | BrE /rɪˈtɜːn/ AmE /rɪˈtɜːrn/
+argument | 参量；实参（实际参数） | BrE /ˈɑːɡjumənt/ AmE /ˈɑːrɡjumənt/
+warning | 警告 | BrE /ˈwɔːnɪŋ/ AmE /ˈwɔːrnɪŋ/
+implement | v. 实现；实施 | /ˈɪmplɪment/
+implementation | n. 实现；实施 | /ˌɪmplɪmenˈteɪʃn/
+parameter | 参数；形参（形式参数） | /pəˈræmɪtə(r)/
+initialize | 初始化 | /ɪˈnɪʃəlaɪz/
+declaration | 声明 | /ˌdekləˈreɪʃn/
+definition | 定义 | /ˌdefɪˈnɪʃn/
+prototype | 原型 | BrE /ˈprəʊtətaɪp/ AmE /ˈproʊtətaɪp/
+separation | 分离 | /ˌsepəˈreɪʃn/
+increase | 增加 | /ɪnˈkriːs/
+reference | 引用 | /ˈrefrəns/
+specification | 说明 | /ˌspesɪfɪˈkeɪʃn/
+require | v. 要求 | /rɪˈkwaɪə(r)/
+source | 源代码 | BrE /sɔːs/ AmE /sɔːrs/
+requirement | n. 要求 | BrE /rɪˈkwaɪəmənt/ AmE /rɪˈkwaɪərmənt/
