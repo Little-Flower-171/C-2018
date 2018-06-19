@@ -121,17 +121,18 @@ If this had managed to increment `x`, what effect would `incr(1+1)` have had?
 
 You are providing a mathematical library and you find the following specification:
 
-> ```
+> ```C++
 > long long fact(int x);
 > ```
 > *Requires:* `0 <= x && x <= 20`.
+
 > *Returns:* the factorial of `x`.
 
 Implement this function.
 
 #### Program properties
 
-- Program name: fact
+- Source name: fact
 
 #### Notes
 
@@ -139,4 +140,8 @@ You can assume the requisitions are met.
 
 ### 2. Input
 
-TODO
+Write a function `get_ints` that takes no argument and returns a `std::vector<int>`. It reads in as many integers as possible. For example, given `12 34 56 78 9a 23 45` as input, the return value contains 5 elements: `{12, 34, 56, 78, 9}`.
+
+#### Program properties
+
+- Source name: input
