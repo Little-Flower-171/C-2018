@@ -125,7 +125,7 @@ You are providing a mathematical library and you find the following specificatio
 > long long fact(int x);
 > ```
 > *Requires:* `0 <= x && x <= 20`.
-
+>
 > *Returns:* the factorial of `x`.
 
 Implement this function.
