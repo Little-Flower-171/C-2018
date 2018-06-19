@@ -11,7 +11,6 @@ alphanumeric | 字母或数字 | BrE /ˌælfənjuːˈmerɪk/ AmE /ˌælfənuːˈ
 angle bracket | 尖角括号 | /ˈæŋɡl ˈbrækɪt/
 append | 追加 | /əˈpend/
 application | 应用程序 | /ˌæplɪˈkeɪʃn/
-argument | 参数 | BrE /ˈɑːɡjumənt/ AmE /ˈɑːrɡjumənt/
 argument | 参量；实参（实际参数） | BrE /ˈɑːɡjumənt/ AmE /ˈɑːrɡjumənt/
 arithmetical | 算术的 | /ˌærɪθˈmetɪkl/
 array | 数组 | /əˈreɪ/
