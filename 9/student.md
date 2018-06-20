@@ -16,22 +16,68 @@ When writing programs, errors are unavoidable. There are many kinds of errors:
 
 ### Compile-time errors
 
-The compiler is the first to detect errors. For example, given the following function:
+The compiler is the first to detect errors.
+
+For example, given the following function:
 
 ```C++
-//calculates a rectangle's area
-int area(int length, int width);
+//calculates the reciprocal of x
+double reciprocal(double x);
 ```
 
 #### Syntax errors
 
-What happens if we call `area` like this:
+What if we call it like this?
 
 ```C++
-int s1 = area(7;   //error: ")" missing
-int s2 = area(7)   //error: ";" missing
-Int s3 = area(7);  //error: Int is not a type
-int s4 = area('7); //error: "'" missing
+double s1 = reciprocal(7;   //error: ")" missing
+double s2 = reciprocal(7)   //error: ";" missing
+Double s3 = reciprocal(7);  //error: Double is not a type
+double s4 = reciprocal('7); //error: "'" missing
 ```
 
-Every line has a syntax error, i.e. they do not follow the syntactic rules of C++. Therefore, the compiler rejects them.
+Each line contains a syntax error, i.e. it does not follow the syntax rules of C++. Therefore, the compiler rejects them.
+
+However, it is not always easy to understand the error report. The compiler typically scans for more information to determine the error. Hence, even a subtle error (something that you do not even believe you made it) leads to complicated report from the compiler; the compiler may also point to other lines of the program. You should check the preceding a few lines if you do not find any error on the line the compiler reports. Take `s3` for example. Instead of
+
+> You misspelled `double`, the `d` should be in lower case
+
+The compiler reports:
+
+> 'Double' was not declared in this scope
+
+Hopefully, you will soon get used to these reports. In fact, this "incomprehensible" information can be interpreted into:
+
+> There is something wrong with 'Double'
+
+It is not really difficult to find the problem.
+
+#### Type errors
+
+TODO
+
+### Link-time errors
+
+Suppose there is a program:
+
+```C++
+//calculates the area of rectangle
+int area(int length, int width);
+
+int main()
+{
+    int x = area(2, 3);
+}
+```
+
+There is a link-time error -- the function is not defined.
+
+### Runtime errors
+
+```C++
+int x = reciprocal(1);
+int y = x-1;
+int z = reciprocal(x);
+```
+
+A runtime error occurs since 
