@@ -174,4 +174,55 @@ However, you are suggested to check the arguments inside your function unless yo
 
 ## Report the error
 
+How to report the error? Apparently simply `/*report error*/` is undesirable.
+
+C++ provides an error-handling mechanism: **exception**.
+
+In order that the error detected not be unintentionally discarded, **exception**s are designed to seperate error detection (by the function) and error handling (by the caller). Errors are annoying, but exceptions make them easier to deal with.
+
+The basic idea of exceptions is: if a function detects an error that cannot be handled by itself, it does not **return** normally but **throw**s an exception to indicate the error; any (direct or indirect) caller can **catch** the exception and handle it.
+
+### Invalid arguments
+
+```C++
+//a special class to report the error
+class Div_by_zero {};
+
+//calculates the reciprocal of x
+double reciprocal(double x)
+{
+    if (x == 0)
+        throw Div_by_zero{};
+    return 1/x;
+}
+
+int main()
+try {
+    double x = reciprocal(1);
+    double y = reciprocal(x)-1;
+    double z = reciprocal(y);
+} catch (Div_by_zero) {
+    std::cerr << "Error: attempting to calculate 1/0\n";
+    return 1; //returning a non-zero number indicates error
+}
+```
+
+If `x != 0`, we calculate the reciprocal and return it; otherwise, we exit the function `reciprocal` and throw an exception. The exception is caught and handled in the `main` function.
+
+`Div_by_zero` is a new type defined by ourselves. `Div_by_zero{}` stands for "create an object of type `Div_by_zero` according to the default." Therefore, `throw Div_by_zero{}` means: create a `Div_by_zero` object and throw it.
+
+If the caller cannot handle the error either, it can choose not to catch the exception. Hence, the exception seeks for further handling. For example:
+
+```C++
+//calculates the average speed to travel the same distance at the speed of x and y
+double average_speed(double x, double y)
+{
+    double xtime = reciprocal(x);
+    double ytime = reciprocal(y);
+    return reciprocal(xtime + ytime);
+}
+```
+
+### Range errors
+
 TODO
