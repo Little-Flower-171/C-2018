@@ -114,7 +114,7 @@ double y = reciprocal(x)-1;
 double z = reciprocal(y);
 ```
 
-Let's take a look at the initialization of `z`. There does not seem to be any errors. But can you find what is wrong?
+Let's take a look at the initialization of `z`. There does not seem to be any errors. Can you find out what is wrong?
 
 These errors may happen if you or your clients do not find and resolve them soon enough. Most people are sensitive to these "fatal" errors, since they do not know the very details but merely "something went wrong". This information does not help much in resolving the problem. Hence, people become angry and keep complaining about the provider of the program all the time.
 
@@ -225,4 +225,61 @@ double average_speed(double x, double y)
 
 ### Range errors
 
-TODO
+Many programs deal with sets of data. In the context of C++, we call "data sets" **container**s. The most widely-used container is [`std::vector`](https://github.com/Little-Flower-171/C-2018/blob/master/7/student.md#stdvector). We can read its size by the `size` member function. The elements of `std::vector` are indexed \[0&nbsp;..&nbsp;`size()`). What if we try to access an element out of range? (Note: \[*a*&nbsp;..&nbsp;*b*) means the range of all integers *x* such that *a*&nbsp;&le;&nbsp;*x*&nbsp;&lt;&nbsp;*b*.)
+
+> But why do this? After all, you should know the subscript must be in \[0&nbsp;..&nbsp;`size()`), and everything is OK as long as you ensure it!
+
+That's true, but impractical. Everybody makes mistakes. Take a look at the following program:
+
+```C++
+std::vector<int> v;                                  //a vector of int's
+for (int i; std::cin >> i;)
+    v.push_back(i);                                  //add new value
+for (int i = 0; i <= v.size(); ++i)                  //print the values
+    std::cout << "v[" << i << "]==" << v[i] << "\n";
+```
+
+There does not seem to be any errors. Can you find out what is wrong?
+
+This kind of error is so common and "famous" that people call it all kinds of names: off-by-one error, range error, bounds error, etc.
+
+> Why not use range-based `for` loop? We will not make such mistakes then. However, in this program, we do not only need the values but we also need their indices. You cannot do that directly with the range-based `for` loop.
+
+The error can be simplified into:
+
+```C++
+std::vector<int> v(233);
+int x = v[233];
+```
+
+Back to the original question, what happens if we do this? The answer is straightforward -- **undefined behavior**.
+
+## Exception types
+
+The standard library defines a lot of types for exceptions. To access them, include the header `<stdexcept>`. For example:
+
+```C++
+void error(const std::string& message)
+{
+    throw std::runtime_error{message};
+}
+
+int main()
+try {
+    error("ABC");
+} catch (std::runtime_error& err) {
+    std::cerr << "Error: " << err.what() << "\n"; //reports "Error: ABC"
+    return 1;
+} catch (...) {
+    std::cerr << "Unknown error\n";
+    return 2;
+}
+```
+
+Every standard exception type can be constructed with a `std::string` (typically used for error message). The `what` member function returns the string.
+
+`catch (...)` catches all uncaught exceptions.
+
+## Logic errors
+
+TODO (use max/min example)
