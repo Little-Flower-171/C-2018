@@ -344,3 +344,21 @@ Average: 89.2083
 There must be something wrong! During July, extremely cold climate occurred in Lubbock, which is a sign of world destruction! Can you find the error?
 
 Unfortunately, the program is still buggy -- it does not run properly in the Antarctic.
+
+## Words
+
+Word | Meaning | Pronunciation
+--- | --- | ---
+detect | 检测 | /dɪˈtekt/
+compiler | 编译器 | /kəmˈpaɪkə(r)/
+syntax | 语法；句法 | /ˈsɪntæks/
+link | 链接 | /lɪŋk/
+linker | 链接器 | /ˈlɪŋkə(r)/
+runtime | 运行时 | /rʌn taɪm/
+occur | 发生 | /əˈkɜː(r)/
+execution | 运行 | /ˌeksɪˈkjuːʃn/
+hardware | 硬件 | BrE /ˈhɑːdweə/ AmE /ˈhɑːrdwer/
+operating system | 操作系统 | BrE /ˈɒpəreɪtɪŋ ˈsɪstəm/ AmE /ˈɑːpəreɪtɪŋ ˈsɪstəm/
+logic | 逻辑 | BrE /ˈlɒdʒɪk/ AmE /ˈlɑːdʒɪk/
+
+TODO: words after Errors section
