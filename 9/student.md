@@ -278,8 +278,69 @@ try {
 
 Every standard exception type can be constructed with a `std::string` (typically used for error message). The `what` member function returns the string.
 
-`catch (...)` catches all uncaught exceptions.
+We can also throw exceptions of our own types.
+
+`catch (...)` catches all uncaught exceptions of all types.
 
 ## Logic errors
 
-TODO (use max/min example)
+Given data, the following code finds out the highest, lowest, and average temperature:
+
+```C++
+#include <iostream>
+
+int main()
+{
+    double sum = 0;
+    double high = 0;
+    double low = 0;
+    int count = 0;
+
+    for (double temp; std::cin >> temp;) {
+        if (temp < low) low = temp;
+        if (temp > high) high = temp;
+        sum += temp;
+        ++count;
+    }
+
+    std::cout << "Highest: " << high << "\n"
+              << "Lowest: " << low << "\n"
+              << "Average: " << sum/count << "\n";
+}
+```
+
+To test the program, we input the hourly temperature of Lubbock on Feb. 16<sup>th</sup>, 2004 (in degrees Fahrenheit).
+
+```
+-16.5 -23.2 -24.0 -25.7 -26.1 -18.6  -9.7  -2.4
+  7.5  12.6  23.8  25.3  28.0  34.8  36.7  41.5
+ 40.3  42.6  39.7  35.4  12.6   6.5  -3.7 -14.3
+```
+
+The output is:
+
+```
+Highest: 42.6
+Lowest: -26.1
+Average: 9.29583
+```
+
+There does not seem to be any errors. Irresponsible programmers may even distribute it directly. Those more careful test it with another set of data (which comes on Jul. 23<sup>rd</sup>, 2004):
+
+```
+ 76.5  73.5  71.0  73.6  70.1  73.5  77.6  85.3
+ 88.5  91.7  95.9  99.2  98.2 100.6 106.3 112.4
+110.2 103.6  94.9  91.7  88.4  85.2  85.4  87.7
+```
+
+This time, the output is:
+
+```
+Highest: 112.4
+Lowest: 0
+Average: 89.2083
+```
+
+There must be something wrong! During July, extremely cold climate occurred in Lubbock, which is a sign of world destruction! Can you find the error?
+
+Unfortunately, the program is still buggy -- it does not run properly in the Antarctic.
