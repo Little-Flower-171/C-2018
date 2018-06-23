@@ -350,7 +350,7 @@ Unfortunately, the program is still buggy -- it does not run properly in the Ant
 Word | Meaning | Pronunciation
 --- | --- | ---
 detect | 检测 | /dɪˈtekt/
-compiler | 编译器 | /kəmˈpaɪkə(r)/
+compiler | 编译器 | /kəmˈpaɪlə(r)/
 syntax | 语法；句法 | /ˈsɪntæks/
 link | 链接 | /lɪŋk/
 linker | 链接器 | /ˈlɪŋkə(r)/
@@ -360,5 +360,19 @@ execution | 运行 | /ˌeksɪˈkjuːʃn/
 hardware | 硬件 | BrE /ˈhɑːdweə/ AmE /ˈhɑːrdwer/
 operating system | 操作系统 | BrE /ˈɒpəreɪtɪŋ ˈsɪstəm/ AmE /ˈɑːpəreɪtɪŋ ˈsɪstəm/
 logic | 逻辑 | BrE /ˈlɒdʒɪk/ AmE /ˈlɑːdʒɪk/
+reject | 拒绝 | /rɪˈdʒekt/
+report | 报告 | BrE /rɪˈpɔːt/ AmE /rɪˈpɔːrt/
+scan | 扫描 | /skæn/
+subtle | 细微的 | /ˈsʌtl/
+scope | 作用域 | BrE /skəʊp/ AmE /skoʊp/
+interpret | 解释 | BrE /ɪnˈtɜːprɪt/ AmE /ɪnˈtɜːrprɪt/
+desirable | 期望的 | /dɪˈzaɪərəbl/
+advanced | 进一步的 | BrE /ədˈvɑːnst/ AmE /ədˈvænst/
+consistent | 一致的 | /kənˈsɪstənt/
+initialization | 初始化 | BrE /ɪˌnɪʃəlaɪˈzeɪʃn/ AmE /ɪˌnɪʃələˈzeɪʃn/
+client | 客户 | /ˈklaɪənt/
+resolve | 解决 | BrE /rɪˈzɒlv/ AmE /rɪˈzɑːlv/
+fatal | 致命的 | /ˈfeɪtl/
+detail | 细节 | /ˈdiːteɪl/ AmE also /dɪˈteɪl/
 
-TODO: words after Errors section
+TODO: more words
