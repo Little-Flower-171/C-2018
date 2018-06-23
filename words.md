@@ -15,18 +15,21 @@ application | 应用程序 | /ˌæplɪˈkeɪʃn/
 argument | 参量；实参（实际参数） | BrE /ˈɑːɡjumənt/ AmE /ˈɑːrɡjumənt/
 arithmetical | 算术的 | /ˌærɪθˈmetɪkl/
 array | 数组 | /əˈreɪ/
-assign | 赋值 | /əˈsaɪn/
-assignment | 赋值 | /əˈsaɪnmənt/
+assign | v. 赋值 | /əˈsaɪn/
+assignment | n. 赋值 | /əˈsaɪnmənt/
 attribute | 属性 | /ˈætrɪbjuːt/
 base | 基于 | /beɪs/
 behavior | 行为 | /bɪˈheɪvjə(r)/
 bitmask | 位掩码 | BrE /bɪt mɑːsk/ AmE /bɪt mæsk/
+bounds | 界限 | /baʊndz/
 brace | 花括号 | /breɪs/
 bracket | 方括号 | /ˈbrækɪt/
 branch | 分支 | BrE /brɑːntʃ/ AmE /bræntʃ/
 byte | 字节 | /baɪt/
 call | 调用 | /kɔːl/
+caller | 调用者 | /ˈkɔːlə(r)/
 case | 情况 | /keɪs/
+catch | 捕获 | /kætʃ/
 clear | 清除 | BrE /klɪə(r)/ AmE /klɪr/
 client | 客户 | /ˈklaɪənt/
 code | 代码 | BrE /kəʊd/ AmE /koʊd/
@@ -56,8 +59,10 @@ detect | 检测 | /dɪˈtekt/
 directive | 指示 | /dəˈrektɪv; dɪˈrektɪv; daɪˈrektɪv/
 discard | 丢弃 | BrE /dɪsˈkɑːd/ AmE /dɪsˈkɑːrd/
 display | 显示 | /dɪˈspleɪ/
+distribute | 发布 | /dɪsˈtrɪbjuːt; ˈdɪstrɪbjuːt/
 doctor | 篡(cuɑ̀n)改 | BrE /ˈdɒktə(r)/ AmE /ˈdɑːktər/
 dynamic | 动态的 | /daɪˈnæmɪk/
+edit | 编辑 | /ˈedɪt/
 effect | 效果 | /ɪˈfekt/
 efficient | 高效的 | /ɪˈfɪʃnt/
 element | 元素 | /ˈelɪmənt/
@@ -66,8 +71,9 @@ encapsulate | 封装 | /ɪnˈkæpsjuleɪt/
 equality | 相等性 | BrE /iˈkwɒləti/ AmE /iˈkwɑːləti/
 equivalent | 等价的 | /ɪˈkwɪvələnt/
 error | 错误 | /ˈerə(r)/
-execute | 执行 | /ˈeksɪkjuːt/
-execution | 运行 | /ˌeksɪˈkjuːʃn/
+exception | 异常 | /ɪkˈsepʃn/
+execute | v. 执行 | /ˈeksɪkjuːt/
+execution | n. 运行 | /ˌeksɪˈkjuːʃn/
 expand | 扩大 | /ɪkˈspænd/
 expression | 表达式 | /ɪkˈspreʃn/
 extract | 提取 | /ɪkˈstrækt/
@@ -78,6 +84,7 @@ form | 形式 | BrE /fɔːm/ AmE /fɔːrm/
 format | 格式 | BrE /ˈfɔːmæt/ AmE /ˈfɔːrmæt/
 function | 函数 | /ˈfʌŋkʃn/
 guarantee | 保证 | /ˌɡærənˈtiː/
+handle | 处理 | /ˈhændl/
 hardware | 硬件 | BrE /ˈhɑːdweə/ AmE /ˈhɑːrdwer/
 header | 头文件 | /ˈhedə(r)/
 hint | 提示；窍门 | /hɪnt/
@@ -88,25 +95,29 @@ increase | 增加 | /ɪnˈkriːs/
 index | 编号 | /ˈɪndeks/
 indicate | 指示 | /ˈɪndɪkeɪt/
 individual | 单独的 | /ˌɪndɪˈvɪdʒuəl/
-initialization | 初始化 | BrE /ɪˌnɪʃəlaɪˈzeɪʃn/ AmE /ɪˌnɪʃələˈzeɪʃn/
-initialize | 初始化 | /ɪˈnɪʃəlaɪz/
+inefficiency | 低效 | /ˌɪnɪˈfɪʃənsi/
+initialization | n. 初始化 | BrE /ɪˌnɪʃəlaɪˈzeɪʃn/ AmE /ɪˌnɪʃələˈzeɪʃn/
+initialize | v. 初始化 | /ɪˈnɪʃəlaɪz/
 input | 输入 | /ˈɪnpʊt/
 insert | 插入 | BrE /ɪnˈsɜːt/ AmE /ɪnˈsɜːrt/
 interpret | 解释 | BrE /ɪnˈtɜːprɪt/ AmE /ɪnˈtɜːrprɪt/
-iterate | 迭代 | /ˈɪtəreɪt/
-iteration | 迭代 | /ˌɪtəˈreɪʃn/
+invalid | 无效的 | /ɪnˈvælɪd/
+iterate | v. 迭代 | /ˈɪtəreɪt/
+iteration | n. 迭代 | /ˌɪtəˈreɪʃn/
 lead | 前导 | /liːd/
 library | 库 | BrE /ˈlaɪbrəri; ˈlaɪbri/ AmE /ˈlaɪbreri/
 limit | 限制 | /ˈlɪmɪt/
-line feed | 换行（字符） | /laɪn fiːd/
 line | 行 | /laɪn/
+line feed | 换行（字符） | /laɪn fiːd/
 link | 链接 | /lɪŋk/
 linker | 链接器 | /ˈlɪŋkə(r)/
 list | 列表 | /lɪst/
 logic | 逻辑 | BrE /ˈlɒdʒɪk/ AmE /ˈlɑːdʒɪk/
 loop | 循环 | /luːp/
 manage | 管理 | /ˈmænɪdʒ/
+mechanism | 机制 | /ˈmekənɪzəm/
 mega- | 1048576 | /ˈmeɡə-/
+member | 成员 | /ˈmembə(r)/
 memory | 内存 | /ˈmeməri/
 message | 信息 | /ˈmesɪdʒ/
 modify | 修改 | BrE /ˈmɒdɪfaɪ/ AmE /ˈmɑːdɪfaɪ/
@@ -124,6 +135,7 @@ parenthesis | （圆）括号（单数） | /pəˈrenθəsɪs/
 parse | 分析 | BrE /pɑːz/ AmE /pɑːrs/
 perform | 执行 | BrE /pəˈfɔːm/ AmE /pərˈfɔːrm/
 position | 位置 | /pəˈzɪʃn/
+pre-condition | 前置条件 | /ˌpriːkənˈdɪʃn/
 print | 打印 | /prɪnt/
 process | 处理 | BrE /ˈprəʊses/ AmE /ˈprɑːses; ˈproʊses/
 program | 程序 | BrE /ˈprəʊɡræm/ AmE /ˈproʊɡræm/
@@ -139,8 +151,8 @@ reference | 引用 | /ˈrefrəns/
 reject | 拒绝 | /rɪˈdʒekt/
 remove | 移除 | /rɪˈmuːv/
 report | 报告 | BrE /rɪˈpɔːt/ AmE /rɪˈpɔːrt/
-represent | 表示 | /ˌreprɪˈzent/
-representation | 表示形式 | /ˌreprɪzenˈteɪʃn/
+represent | v. 表示 | /ˌreprɪˈzent/
+representation | n. 表示形式 | /ˌreprɪzenˈteɪʃn/
 reproduce | 再现 | BrE /ˌriːprəˈdjuːs/ AmE /ˌriːprəˈduːs/
 require | v. 要求 | /rɪˈkwaɪə(r)/
 requirement | n. 要求 | BrE /rɪˈkwaɪəmənt/ AmE /rɪˈkwaɪərmənt/
@@ -172,12 +184,14 @@ store | 存储 | /stɔː(r)/
 stream | 流 | /stri:m/
 string | 字符串 | /strɪŋ/
 style | 样式 | /staɪl/
+subscript | 下标 | /ˈsʌbskrɪpt/
 subtle | 细微的 | /ˈsʌtl/
 switch | 开关 | /swɪtʃ/
 syntax | 语法；句法 | /ˈsɪntæks/
 tabulator | Tab键 | /ˈtæbjuleɪtə(r)/
 template | 模(mú)板 | /ˈtempleɪt/
 term | 项 | BrE /tɜːm/ AmE /tɜːrm/
+throw | 抛出 | BrE /θrəʊ/ AmE /θroʊ/
 type | 类型 | /taɪp/
 utility | 实用程序 | /juːˈtɪləti/
 value | 值 | /ˈvæljuː/
