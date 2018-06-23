@@ -7,6 +7,7 @@ access | 访问 | /ˈækses/
 accumulation | 积累 | /əˌkjuːmjəˈleɪʃn/
 accurate | 精确的 | /ˈækjərət/
 add | 增加 | /æd/
+advanced | 进一步的 | BrE /ədˈvɑːnst/ AmE /ədˈvænst/
 alphanumeric | 字母或数字 | BrE /ˌælfənjuːˈmerɪk/ AmE /ˌælfənuːˈmerɪk/
 angle bracket | 尖角括号 | /ˈæŋɡl ˈbrækɪt/
 append | 追加 | /əˈpend/
@@ -27,10 +28,13 @@ byte | 字节 | /baɪt/
 call | 调用 | /kɔːl/
 case | 情况 | /keɪs/
 clear | 清除 | BrE /klɪə(r)/ AmE /klɪr/
+client | 客户 | /ˈklaɪənt/
 code | 代码 | BrE /kəʊd/ AmE /koʊd/
 compile | 编译 | /kəmˈpaɪl/
+compiler | 编译器 | /kəmˈpaɪlə(r)/
 compound | 复合的 | BrE /ˈkɒmpaʊnd/ AmE /ˈkɑːmpaʊnd/ 
 condition | 条件 | /kənˈdɪʃn/
+consistent | 一致的 | /kənˈsɪstənt/
 console | 控制台 | BrE /ˈkɒnsəʊl/ AmE /ˈkɑːnsoʊl/
 construct | 构造 | /kənˈstrʌkt/
 container | 容器 | /kənˈteɪnə(r)/
@@ -46,6 +50,9 @@ declare | v. 声明 | BrE /dɪˈkleə(r)/ AmE /dɪˈkler/
 default | 默认 | /dɪˈfɔːlt; ˈdiːfɔːlt/
 define | v. 定义 | /dɪˈfaɪn/
 definition | n. 定义 | /ˌdefɪˈnɪʃn/
+desirable | 期望的 | /dɪˈzaɪərəbl/
+detail | 细节 | /ˈdiːteɪl/ AmE also /dɪˈteɪl/
+detect | 检测 | /dɪˈtekt/
 directive | 指示 | /dəˈrektɪv; dɪˈrektɪv; daɪˈrektɪv/
 discard | 丢弃 | BrE /dɪsˈkɑːd/ AmE /dɪsˈkɑːrd/
 display | 显示 | /dɪˈspleɪ/
@@ -60,15 +67,18 @@ equality | 相等性 | BrE /iˈkwɒləti/ AmE /iˈkwɑːləti/
 equivalent | 等价的 | /ɪˈkwɪvələnt/
 error | 错误 | /ˈerə(r)/
 execute | 执行 | /ˈeksɪkjuːt/
+execution | 运行 | /ˌeksɪˈkjuːʃn/
 expand | 扩大 | /ɪkˈspænd/
 expression | 表达式 | /ɪkˈspreʃn/
 extract | 提取 | /ɪkˈstrækt/
+fatal | 致命的 | /ˈfeɪtl/
 file | 文件 | /faɪl/
 flag | 信号 | /flæɡ/
 form | 形式 | BrE /fɔːm/ AmE /fɔːrm/
 format | 格式 | BrE /ˈfɔːmæt/ AmE /ˈfɔːrmæt/
 function | 函数 | /ˈfʌŋkʃn/
 guarantee | 保证 | /ˌɡærənˈtiː/
+hardware | 硬件 | BrE /ˈhɑːdweə/ AmE /ˈhɑːrdwer/
 header | 头文件 | /ˈhedə(r)/
 hint | 提示；窍门 | /hɪnt/
 homogeneous | 同构的 | BrE /ˌhɒməˈdʒiːniəs/ AmE /ˌhoʊməˈdʒiːniəs/
@@ -78,9 +88,11 @@ increase | 增加 | /ɪnˈkriːs/
 index | 编号 | /ˈɪndeks/
 indicate | 指示 | /ˈɪndɪkeɪt/
 individual | 单独的 | /ˌɪndɪˈvɪdʒuəl/
+initialization | 初始化 | BrE /ɪˌnɪʃəlaɪˈzeɪʃn/ AmE /ɪˌnɪʃələˈzeɪʃn/
 initialize | 初始化 | /ɪˈnɪʃəlaɪz/
 input | 输入 | /ˈɪnpʊt/
 insert | 插入 | BrE /ɪnˈsɜːt/ AmE /ɪnˈsɜːrt/
+interpret | 解释 | BrE /ɪnˈtɜːprɪt/ AmE /ɪnˈtɜːrprɪt/
 iterate | 迭代 | /ˈɪtəreɪt/
 iteration | 迭代 | /ˌɪtəˈreɪʃn/
 lead | 前导 | /liːd/
@@ -88,7 +100,10 @@ library | 库 | BrE /ˈlaɪbrəri; ˈlaɪbri/ AmE /ˈlaɪbreri/
 limit | 限制 | /ˈlɪmɪt/
 line feed | 换行（字符） | /laɪn fiːd/
 line | 行 | /laɪn/
+link | 链接 | /lɪŋk/
+linker | 链接器 | /ˈlɪŋkə(r)/
 list | 列表 | /lɪst/
+logic | 逻辑 | BrE /ˈlɒdʒɪk/ AmE /ˈlɑːdʒɪk/
 loop | 循环 | /luːp/
 manage | 管理 | /ˈmænɪdʒ/
 mega- | 1048576 | /ˈmeɡə-/
@@ -97,6 +112,8 @@ message | 信息 | /ˈmesɪdʒ/
 modify | 修改 | BrE /ˈmɒdɪfaɪ/ AmE /ˈmɑːdɪfaɪ/
 move | 移动 | /muːv/
 object | 对象 | BrE /ˈɒbdʒɪkt/ AmE /ˈɑːbdʒekt; ˈɑːbdʒɪkt/
+occur | 发生 | /əˈkɜː(r)/
+operating system | 操作系统 | BrE /ˈɒpəreɪtɪŋ ˈsɪstəm/ AmE /ˈɑːpəreɪtɪŋ ˈsɪstəm/
 operation | 操作 | BrE /ˌɒpəˈreɪʃn/ AmE /ˌɑːpəˈreɪʃn/
 operator | 运算符 | BrE /ˈɒpəreɪtə(r)/ AmE /ˈɑːpəreɪtər/
 optional | 可选的 | BrE /ˈɒpʃənl/ AmE /ˈɑːpʃənl/
@@ -119,16 +136,22 @@ range | 范围 | /reɪndʒ/
 recover | 恢复 | /rɪˈkʌvə(r)/
 reduce | 缩小 | BrE /rɪˈdjuːs/ AmE /rɪˈduːs/
 reference | 引用 | /ˈrefrəns/
+reject | 拒绝 | /rɪˈdʒekt/
 remove | 移除 | /rɪˈmuːv/
+report | 报告 | BrE /rɪˈpɔːt/ AmE /rɪˈpɔːrt/
 represent | 表示 | /ˌreprɪˈzent/
 representation | 表示形式 | /ˌreprɪzenˈteɪʃn/
 reproduce | 再现 | BrE /ˌriːprəˈdjuːs/ AmE /ˌriːprəˈduːs/
 require | v. 要求 | /rɪˈkwaɪə(r)/
 requirement | n. 要求 | BrE /rɪˈkwaɪəmənt/ AmE /rɪˈkwaɪərmənt/
+resolve | 解决 | BrE /rɪˈzɒlv/ AmE /rɪˈzɑːlv/
 result | 结果 | /rɪˈzʌlt/
 return | 返回 | BrE /rɪˈtɜːn/ AmE /rɪˈtɜːrn/
 reverse | 相反 | BrE /rɪˈvɜːs/ AmE /rɪˈvɜːrs/
+runtime | 运行时 | /rʌn taɪm/
 sample | 样例 | BrE /ˈsɑːmpl/ AmE /ˈsæmpl/
+scan | 扫描 | /skæn/
+scope | 作用域 | BrE /skəʊp/ AmE /skoʊp/
 selection | 选择 | /sɪˈlekʃn/
 semicolon | 分号（字符） | BrE /ˌsemiˈkəʊlən/ AmE /ˈsemikoʊlən/
 separate | adj. 单独的 | /ˈseprət/
@@ -149,7 +172,9 @@ store | 存储 | /stɔː(r)/
 stream | 流 | /stri:m/
 string | 字符串 | /strɪŋ/
 style | 样式 | /staɪl/
+subtle | 细微的 | /ˈsʌtl/
 switch | 开关 | /swɪtʃ/
+syntax | 语法；句法 | /ˈsɪntæks/
 tabulator | Tab键 | /ˈtæbjuleɪtə(r)/
 template | 模(mú)板 | /ˈtempleɪt/
 term | 项 | BrE /tɜːm/ AmE /tɜːrm/
