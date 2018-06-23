@@ -174,7 +174,7 @@ However, you are suggested to check the arguments inside your function unless yo
 
 ## Report the error
 
-How to report the error? Apparently simply `/*report error*/` is undesirable.
+How to report the error? Apparently simply `/*report error*/` is unacceptable.
 
 C++ provides an error-handling mechanism: **exception**.
 
@@ -221,7 +221,21 @@ double average_speed(double x, double y)
     double ytime = reciprocal(y);
     return reciprocal(xtime + ytime);
 }
+
+int main()
+try {
+    double av = average_speed(0, 5);
+} catch (Div_by_zero) {
+    std::cerr << "Error: divide by 0\n";
+    return 1;
+}
 ```
+
+The exception is:
+
+- thrown by `reciprocal`;
+- ignored by `average_speed`;
+- caught by `main` and handled.
 
 ### Range errors
 
@@ -259,6 +273,9 @@ Back to the original question, what happens if we do this? The answer is straigh
 The standard library defines a lot of types for exceptions. To access them, include the header `<stdexcept>`. For example:
 
 ```C++
+#include <iostream>
+#include <stdexcept>
+
 void error(const std::string& message)
 {
     throw std::runtime_error{message};
@@ -374,5 +391,17 @@ client | 客户 | /ˈklaɪənt/
 resolve | 解决 | BrE /rɪˈzɒlv/ AmE /rɪˈzɑːlv/
 fatal | 致命的 | /ˈfeɪtl/
 detail | 细节 | /ˈdiːteɪl/ AmE also /dɪˈteɪl/
-
-TODO: more words
+invalid | 无效的 | /ɪnˈvælɪd/
+handle | 处理 | /ˈhændl/
+pre-condition | 前置条件 | /ˌpriːkənˈdɪʃn/
+caller | 调用者 | /ˈkɔːlə(r)/
+edit | 编辑 | /ˈedɪt/
+inefficiency | 低效 | /ˌɪnɪˈfɪʃənsi/
+mechanism | 机制 | /ˈmekənɪzəm/
+exception | 异常 | /ɪkˈsepʃn/
+throw | 抛出 | BrE /θrəʊ/ AmE /θroʊ/
+catch | 捕获 | /kætʃ/
+member | 成员 | /ˈmembə(r)/
+subscript | 下标 | /ˈsʌbskrɪpt/
+bounds | 界限 | /baʊndz/
+distribute | 发布 | /dɪsˈtrɪbjuːt; ˈdɪstrɪbjuːt/
