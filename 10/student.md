@@ -187,9 +187,28 @@ These operations (implemented as helper functions here) are useful. If we do not
 
 ### Member function and constructor
 
+We designed an initialization function for `Date`, which provides the date-checking feature. However, it is of no use without being used properly. For example, assuming we have defined the output operator `<<` for `Date` (by now let's skip how to):
 
+```C++
+void f()
+{
+    Date today;
+    //...
+    std::cout << today << "\n";   //use today
+    //...
+    init_day(today, 2008, 3, 31);
+    //...
+    Date tomorrow;
+    tomorrow.y = today.y;
+    tomorrow.m = today.m;
+    tomorrow.d = today.d+1;       //add 1 day to today
+    std::cout << tomorrow << "\n";
+}
+```
 
+We forgot to immediately initialize `today` after we had constructed it, and "someone" used it before initialization. And "someone" thinks calling `add_day()` is a waste of time, or maybe he never heard about the function at all. Therefore, he constructed `tomorrow` by hand instead of calling `add_day()`. This program becomes buggy -- and the bug is *very* serious. For example, an uninitialized `Date` may lead to garbage output, and simply adding 1 to `d` becomes time bomb -- it effects an invalid date if `today` is the last day of the month. The most serious problem is that there does not seem to be any problems.
 
+TODO: P<sub>198</sub>, §2
 
 
 
