@@ -208,36 +208,36 @@ void f()
 
 We forgot to immediately initialize `today` after we had constructed it, and "someone" used it before initialization. And "someone" thinks calling `add_day()` is a waste of time, or maybe he never heard about the function at all. Therefore, he constructed `tomorrow` by hand instead of calling `add_day()`. This program becomes buggy -- and the bug is *very* serious. For example, an uninitialized `Date` may lead to garbage output, and simply adding 1 to `d` becomes time bomb -- it effects an invalid date if `today` is the last day of the month. The most serious problem is that there does not seem to be any problems.
 
-TODO: P<sub>198</sub>, §2
+This fact urges us to look for better approaches -- we need an initialization function that *cannot* be forgotten by the programmer, and an operation unlikely to be neglected. We can use member functions:
 
+```C++
+//simple structure Date
+//ensures initialization via constructor
+//provides some convenience
+struct Date {
+    int y, m, d;               //year, month, day
+    Date(int y, int m, int d); //check validation of date and initialize
+    void add_day(int n);       //add n days to the date
+};
+```
 
+The function `Date` is a **constructor** -- a special member function to initialize ("construct") the object. If a class's constructor requires arguments, then we have to provide them; if we forget, the compiler detects the error. C++ provides a special and convenient way to initialize:
 
+```C++
+Date my_birthday;                    //error: my_birthday not initialized
+Date today{12, 24, 2007};            //runtime error
+Date last{2000, 12, 31};             //correct
+Date next = {2014, 2, 14};           //correct (long-winded)
+Date christmas = Date{1976, 12, 24}; //correct (verbose style)
+```
 
+To use them:
 
+```C++
+last.add_day(1);
+add_day(2);      //error: which date?
+```
 
+We must call a member function on a specific object with the dot operator `.`.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### Keep details private
