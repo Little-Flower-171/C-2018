@@ -104,6 +104,89 @@ public:
 
 ## Evolve a class
 
+How to express dates (like 1954-08-14) in a C++ program?
+
+### Structure and function
+
+> How about year, month, day?
+
+That is not the only answer, nor is it always the best answer, but for now it is enough. The first proposal is a simple structure:
+
+```C++
+//simple structure Date
+struct Date {
+    int y; //year
+    int m; //month
+    int d; //day
+};
+
+Date one_day; //a Date variable (named object)
+```
+
+A Date object (like `one_day`) consists of three `int` members: `y`, `m`, and `d`. The `Date` structure does not implicitly relate to any other data structure, nor can it do "magic".
+
+What operations can we perform on it? Actually, we can do *any* operations, since we can access `Date` objects' members, and read/write them as we want. The difficulty is that this is not really convenient -- every time we want to do something with `Date` objects,  we have to read/write their members:
+
+```C++
+//set one_day to 2005-12-24
+one_day.y = 2005;
+one_day.d = 12;
+one_day.m = 24;
+```
+
+This is verbose and likely to contain errors. Can you find out what is wrong?
+
+Moreover, does the following make sense?
+
+```C++
+Date x;
+x.y = -3;
+x.m = 13;
+x.d = 32;
+```
+
+What about this?
+
+```C++
+Date y;
+y.y = 1900;
+y.m = 2;
+y.d = 29;
+```
+
+The latter seems to be much more meaningful than the former. But is 1900 a leap year? Are you sure?
+
+A better approach is to design some **helper function**s to do some common operations for us. Hence, we do not repeat ourselves, nor do we make the same mistakes and keep searching for and resolving them. For almost any type, initialization and assignment are common operations. For `Date`, increment is another. Therefore, we write the following helper functions:
+
+```C++
+void init_day(Date& dd, int y, int m, int d)
+{
+    //checks whether (y, m, d) is a valid date
+    //if it is, initialize dd with it
+}
+void add_day(Date& dd, int n)
+{
+    //add n days to dd
+}
+```
+
+Try them:
+
+```C++
+void f()
+{
+    Date today;
+    init_day(today, 12, 24, 2005); //ouch! (we wrote the date in wrong order)
+    add_day(today, 1);
+}
+```
+
+These operations (implemented as helper functions here) are useful. If we do not write a program once and for all, date-checking will be difficult and boring -- we may forget to check the date and thus get a buggy program. Every time we define a type, we need some operations on it. The number and kind of operation(s) depend on the type. So does the way we provide them (function, member function or operator). Nevertheless, if we decide to define a type, we should think of:
+
+> What operations will we design for the type?
+
+### Member function and constructor
+
 
 
 
