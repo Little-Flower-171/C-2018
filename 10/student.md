@@ -443,9 +443,52 @@ Month d = static_cast<Month>(1); //ok: very explicit cast
 
 ## Operator overloading
 
+You can define almost all C++ operators on classes and enumerations. This is usually called **operator overloading**. With this mechanism, you can provide conventional expressions for user-defined types. For example, we can define an output operator for `Month`:
 
+```C++
+//special class to report error
+struct Invalid_month {
+    Month m;
+};
 
+std::ostream& operator<<(std::ostream& os, Month m)
+{
+    switch (m) {
+    case Month::jan: os << "January"  ; break;
+    case Month::feb: os << "February" ; break;
+    case Month::mar: os << "March"    ; break;
+    case Month::apr: os << "April"    ; break;
+    case Month::may: os << "May"      ; break;
+    case Month::jun: os << "June"     ; break;
+    case Month::jul: os << "July"     ; break;
+    case Month::aug: os << "August"   ; break;
+    case Month::sep: os << "September"; break;
+    case Month::oct: os << "October"  ; break;
+    case Month::nov: os << "November" ; break;
+    case Month::dec: os << "December" ; break;
+    default: throw Invalid_month{m}; //throw an exception that contains the invalid month
+    }
+    return os; //for chaining
+}
+```
 
+*Why do we accept a `std::ostream&` as first parameter and return a `std::ostream`?*
+
+You can define almost all C++ operators -- `+`, `-`, `*`, `/`, `%`, `[]`, `()`, `^`, `!`, `&`, `<`, `<=`, `>`, `>=`, etc. You cannot define new operators like `**` or `$=`. And you must accept an adequate number of operands. You can define a unary `-` or a binary `+`, but cannot define a unary `<=` or a binary `!`.
+
+An overloaded operator must operate on at least one user-defined-type object:
+
+```C++
+int operator+(int, int);               //error: cannot modify the language itself
+Vec operator+(const Vec&, const Vec&); //ok
+Vec operator+(const Vec&, int);        //ok
+```
+
+Overloaded operators should keep their original meaning -- `+` for addition, `*` for multiplication, `[]` for element access, `()` for application, etc. However, this is only advice; it is not a C++ rule.
+
+Surprisingly, instead of `+`, `-`, `*` and `/`, the most frequently-overloaded operators are `=`, `==`, `!=`, `<`, `[]` and `()`.
+
+## Class interface
 
 
 
