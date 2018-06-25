@@ -368,10 +368,80 @@ This makes the class declaration large and "messy". Moreover, this does not put 
 
 Note that `month()` can access `m` which is declared after it. The rule "a name must be declared before used" can be compromised in a class.
 
-### Referring to the current object
+## Enumerations
 
+Enumerations are a very simple kind of user-defined type that specifies a set of values denoted by **enumerator**s. For example:
 
+```C++
+enum class Month {
+    jan = 1, feb, mar, apr, may, jun,
+    jul    , aug, sep, oct, nov, dec
+};
+```
 
+The "body" of the enumeration definition is simply a list of enumerators. We can access these enumerators with the scope resolution operator `::`.
+
+You can specify a value for an enumerator or not. If you do not, its value is the previous enumerator plus 1. Hence, the definition is identical to:
+
+```C++
+enum class Month {
+    jan = 1, feb = 2, mar = 3, apr = 4 , may = 5 , jun = 6 ,
+    jul = 7, aug = 8, sep = 9, oct = 10, nov = 11, dec = 12
+};
+```
+
+However, not only is the latter verbose but we are also likely to make mistakes. Apparently the compiler is better at such work.
+
+By default, the first enumerator has value 0:
+
+```C++
+enum class Day {
+    sunday, monday, tuesday, wednesday, thursday, friday, saturday
+};
+```
+
+Here, the values of `Day::sunday` to `Day::saturday` are 0 to 6, respectively.
+
+To use `Month`:
+
+```C++
+Month m = Month::feb;
+
+Month m2 = feb;         //error: feb is not declared in this scope
+m = 7;                  //error: cannot assign int to Month
+int n = m;              //error: cannot assign Month to int
+
+Month a = Month(7);     //ok: a == Month::jul
+Month b = Month{7};     //ok: a == Month::jul since C++17
+                        //compile-time error before C++17
+Month aa = Month(7777); //ok: you are responsible for your own action
+Month bb = Month{7777}; //compile-time error
+
+//ditto
+Month c(7);
+Month d{7};
+Month cc(7777);
+Month dd{7777};
+
+Month x = 7;            //compile-time error
+Month y = {7};          //compile-time error
+```
+
+We can explicitly convert a `Month` to an `int`:
+
+```C++
+int a = int(Month::jan);              //ok: explicit cast
+int b = static_cast<int>(Month::jan); //ok: very explicit cast
+```
+
+Or convert an `int` to a `Month`:
+
+```C++
+Month c = Month(1);              //ok: explicit cast
+Month d = static_cast<Month>(1); //ok: very explicit cast
+```
+
+## Operator overloading
 
 
 
