@@ -216,7 +216,7 @@ This fact urges us to look for better approaches -- we need an initialization fu
 //provides some convenience
 struct Date {
     int y, m, d;               //year, month, day
-    Date(int y, int m, int d); //check validation of date and initialize
+    Date(int y, int m, int d); //check validity of date and initialize
     void add_day(int n);       //add n days to the date
 };
 ```
@@ -241,3 +241,42 @@ add_day(2);      //error: which date?
 We must call a member function on a specific object with the dot operator `.`.
 
 ### Keep details private
+
+However, a problem is still unresolved -- what if someone forgets to use `add_day()`? What if someone decides to modify the month directly? After all, we "forgot" to provide these features:
+
+```C++
+Date birthday{1960, 12, 31};
+++birthday.d;                //invalid date
+
+Date today{1970, 2, 3};
+today.m = 14;                //invalid date
+```
+
+As long as we expose the implementation details to the user, someone (intentionally or accidently) messes things up -- they create invalid dates. Such invalid objects become time-bombs -- they lead to runtime errors or logic errors. Therefore, the implementation details of `Date` should be inaccessible by the user, except via public functions. We improve the class:
+
+```C++
+//simple Date class (with control over access)
+class Date {
+    int y, m, d;               //year, month, day
+public:
+    Date(int y, int m, int d); //checks validity and initialize
+    void add_day(int n);       //add n days to date
+    int month() { return m; }
+    int day  () { return d; }
+    int year () { return y; }
+};
+```
+
+To use it:
+
+```C++
+Date birthday{1970, 12, 30};
+birthday.m = 14;
+std::cout << birthday.month() << "\n"; //we provide read-only access to m
+```
+
+"Valid date" is a special case of **valid value** or **valid state**. We should try to keep the object valid when we design a type -- we hide the representation, provide a constructor that creates valid objects, and the design of all member functions follow the pattern of "accepting valid objects and generating valid objects."
+
+The rule used to judge validity is called **invariant**. If we cannot specify a variant, we may have to deal with plain data, in which case, `struct` can be used.
+
+### Defining member functions
