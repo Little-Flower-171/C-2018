@@ -280,3 +280,134 @@ std::cout << birthday.month() << "\n"; //we provide read-only access to m
 The rule used to judge validity is called **invariant**. If we cannot specify a variant, we may have to deal with plain data, in which case, `struct` can be used.
 
 ### Defining member functions
+
+We have already studied `Date`, both from the view of an interface-designer and a user. However, we have to implement them sooner or later. First, we reorganize the `Date` class declaration, in which, following the most common style, we place the public interface at the top:
+
+```C++
+//simple Date class (some people are used to putting the implementation details at the end)
+class Date {
+public:
+    Date(int y, int m, int d); //constructor: checks validity and initialize
+    void add_day(int n);       //add n days to the date
+    int month();
+    //...
+private:
+    int y, m, d;               //year, month, day
+};
+```
+
+The reason why people prefer placing the public interface at the top is that most people are more interested in interface. Theoretically, users need not know the implementation details of the class; they merely learn the interface. The compiler does not care the order of functions and data members; any order is okay.
+
+When we are defining a member out of class, we need to tell of which class the member is. This can be done with the **scope resolution operator** `::`:
+
+```C++
+Date::Date(int yy, int mm, int dd) //constructor
+    :y{yy}, m{mm}, d{dd}           //initialize the members
+{
+}
+
+void Date::add_day(int n)
+{
+    //...
+}
+
+int month()   //ouch -- "Date::" missing
+{
+    return m; //error: m is not declared in this scope
+}
+```
+
+`:y{yy}, m{mm}, d{dd}` is the syntax for member initialization, called **member initializer list**. You can also write like this:
+
+```C++
+Date::Date(int yy, int mm, int dd)
+{
+    y = yy;
+    m = mm;
+    d = dd;
+}
+```
+
+However, in principle, the latter first default-initializes the members, and then assigns to them. The difference between these two fragments is similar to that between
+
+```C++
+int x;    //define x first
+//...
+x = 2;    //then assign to it
+```
+
+and 
+
+```C++
+int x{2}; //define and initialize to 2
+```
+
+We can also define the member functions inside the class:
+
+```C++
+//simple Date class (some people are used to putting the implementation details at the end)
+class Date {
+public:
+    Date(int yy, int mm, int dd)
+        :y{yy}, m{mm}, d{dd}
+    {
+        //...
+    }
+    void add_day(int n)
+    {
+        //...
+    }
+    int month() { return m; }
+    //...
+private:
+    int y, m, d; //year, month, day
+};
+```
+
+This makes the class declaration large and "messy". Moreover, this does not put emphasis on interface but rather implementation details. Therefore, we should avoid defining long functions inside the class declaration. However, simple and short functions like `month()` are better to be put inside the class declaration. In-class functions are automatically inline.
+
+Note that `month()` can access `m` which is declared after it. The rule "a name must be declared before used" can be compromised in a class.
+
+### Referring to the current object
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
