@@ -490,37 +490,98 @@ Surprisingly, instead of `+`, `-`, `*` and `/`, the most frequently-overloaded o
 
 ## Class interface
 
+### Argument type
 
+We made the constructor of `Date` accept three `int`s as argument. This brings some problems; for example, the programmer wants to construct a `Date` 2005-04-05:
 
+```C++
+Date d1{4, 5, 2005}; //runtime error
+Date d2{2005, 4, 5}; //no error (ouch!)
+```
 
+The first problem is easy to deal with. However, the second is undetectable by user code. It is caused by different conventions -- 4/5 stands for April 5<sup>th</sup> in the US but May 4<sup>th</sup> in the UK. An obvious solution is to use the `Month` type:
 
+```C++
+//simple Date class (using Month)
+class Date {
+public:
+    Date(int y, Month m, int d); //constructor: checks validity and initialize
+    //...
+private:
+    int y;                       //year
+    Month m;                     //month
+    int d;                       //day
+};
+```
 
+With `Month`, the compiler detects the error of reversing the order of month and day. We can also use the name of month rather than a number, which is more readable and less likely to contain mistakes. For example, to create a `Date` of 1998-03-04:
 
+```C++
+Date dx1{1998, 4, 3};          //compile-time error: the second argument is not Month
+Date dx2{1998, 4, Month::mar}; //compile-time error: the second argument is not Month
+Date dx3{4, Month::mar, 1998}; //runtime error: no month contains 1998 days
+Date dx4{Month::mar, 4, 1998}; //compile-time error: the first argument is not int
+Date dx5{1998, Month::mar, 4}; //correct
+```
 
+We prefer detecting the error at compile-time to runtime; we prefer it to be detected (either at compile-time or runtime) rather than to search for the error ourselves.
 
+*How about reversing the day and the year?*
 
+### Copy the object
 
+Do we copy objects? How to?
 
+Concerning `Date` or `Month`, the answer is definitely *yes*, and the sense of *copy* is simple -- copying every member is sufficient. In fact, this is the default case -- the compiler does so without any declarations provided by you. For example, if you try to copy a `Date` object, the compiler copies `y`, `m`, and `d` one by one:
 
+```C++
+Date holiday{1978, Month::jul, 4};
 
+Date d2 = holiday;
+Date d3 = Date{1978, Month::jul, 4};
+holiday = Date{1978, Month::dec, 24};
+d3 = holiday;
+```
 
+Now, `holiday` and `d3` are both 1978-12-24, and `d2` is 1978-07-04. We can also create a temporary unnamed object: `Date{1978, Month::dec, 24}`, for example:
 
+```C++
+std::cout << Date{1978, Month::dec, 24};
+```
 
+(If the default is undesirable, we can provide our own or prohibit copying. By now let's skip that.)
 
+### Default constructor
 
+```C++
+int w;              //the value of w is undefined
+double x;           //the value of x is undefined
 
+std::string y;      //y == ""
+std::vector<int> z; //z is empty
+```
 
+This is because `std::string` and `std::vector<int>` have **default constructors**. A default constructor is one that accepts no argument.
 
+If `T` is a type, `T{}` is its default value:
 
+```C++
+//s1, s2 and s3 are all ""
+std::string s1;
+std::string s2{};
+std::string s3 = std::string{};
 
+//v1, v2 and v3 are all empty
+std::vector<int> v1;
+std::vector<int> v2{};
+std::vector<int> v3 = std::vector<int>{};
 
+//i1 has undefined value, i2 and i3 are 0
+int i1;
+int i2{};
+int i3 = int{};
+```
 
+Without constructors, we would not have been able to set up an invariant.
 
-
-
-
-
-
-
-
-
+### `const` member functions
