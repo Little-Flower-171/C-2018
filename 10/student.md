@@ -585,3 +585,37 @@ int i3 = int{};
 Without constructors, we would not have been able to set up an invariant.
 
 ### `const` member functions
+
+```C++
+void some_function(Date& a, const Date& b)
+{
+    a.add_day(10);                 //ok
+    b.add_day(10);                 //error: b is constant
+    std::cout << a.year() << "\n"; //ok
+    std::cout << b.year() << "\n"; //error: b is constant (Why?)
+}
+```
+
+Here, `b.year()` does not modify `b`, but the compiler is unaware of that. We can resolve by defining `year()` as `const`:
+
+```C++
+class Date {
+public:
+    //...
+    int day  () const;     //constant member that does not mutate the object
+    int month() const;     //constant member that does not mutate the object
+    int year () const;     //constant member that does not mutate the object
+    
+    void add_day  (int n); //non-constant member that mutates the object
+    void add_month(int n); //non-constant member that mutates the object
+    void add_year (int n); //non-constant member that mutates the object
+private:
+    int y;                 //year
+    Month m;               //month
+    int d;                 //day
+};
+```
+
+The compiler detects the error of trying to mutate the object inside a `const` function.
+
+## Words
