@@ -640,5 +640,16 @@ constructor | 构造函数 | /kənˈstrʌktə(r)/
 expose | 暴露 | BrE /ɪkˈspəʊz/ AmE /ɪkˈspoʊz/
 invariant | 不变式 | BrE /ɪnˈveəriənt/ AmE /ɪnˈveriənt/
 validity | 合法性 | /vəˈlɪdəti/
+scope | 作用域 | BrE /skəʊp/ AmE /skoʊp/
+resolution | 解析 | /ˌrezəˈluːʃn/
+fragment | 片段 | /ˈfræɡmənt/
+inline | 内联的 | /ɪn laɪn/
+enumerator | 枚举项；枚举值 | BrE /ɪˈnjuːməreɪtə(r)/ AmE /ɪˈnuːməreɪtər/
+cast | 强制转换 | BrE /kɑːst/ AmE /kæst/
+overload | 重载 | BrE /ˌəʊvəˈləʊd/ AmE /ˌoʊvərˈloʊd/
+operand | 操作数 | BrE /ˈɒpərænd/ AmE /ˈɑːpərænd/
+unary | 一元的 | /ˈjuːnəri/
+binary | 二元的 | /ˈbaɪnəri/
+operate | 操作 | BrE /ˈɒpəreɪt/ AmE /ˈɑːpəreɪt/
 
-TODO: words from [here](https://github.com/Little-Flower-171/C-2018/blob/master/10/student.md#defining-member-functions) and later
+TODO: Words from [here](https://github.com/Little-Flower-171/C-2018/blob/master/10/student.md#class-interface) and later
