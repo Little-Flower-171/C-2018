@@ -125,7 +125,7 @@ Date one_day; //a Date variable (named object)
 
 A Date object (like `one_day`) consists of three `int` members: `y`, `m`, and `d`. The `Date` structure does not implicitly relate to any other data structure, nor can it do "magic".
 
-What operations can we perform on it? Actually, we can do *any* operations, since we can access `Date` objects' members, and read/write them as we want. The difficulty is that this is not really convenient -- every time we want to do something with `Date` objects,  we have to read/write their members:
+What operations can we perform on it? Actually, we can do *any* operation, since we can access `Date` objects' members, and read/write them as we want. The difficulty is that this is not really convenient -- every time we want to do something with `Date` objects,  we have to read/write their members:
 
 ```C++
 //set one_day to 2005-12-24
@@ -252,7 +252,7 @@ Date today{1970, 2, 3};
 today.m = 14;                //invalid date
 ```
 
-As long as we expose the implementation details to the user, someone (intentionally or accidently) messes things up -- they create invalid dates. Such invalid objects become time-bombs -- they lead to runtime errors or logic errors. Therefore, the implementation details of `Date` should be inaccessible by the user, except via public functions. We improve the class:
+As long as we expose the implementation details to the user, someone (intentionally or accidentally) messes things up -- they create invalid dates. Such invalid objects become time-bombs -- they lead to runtime errors or logic errors. Therefore, the implementation details of `Date` should be inaccessible by the user, except via public functions. We improve the class:
 
 ```C++
 //simple Date class (with control over access)
@@ -619,3 +619,26 @@ private:
 The compiler detects the error of trying to mutate the object inside a `const` function.
 
 ## Words
+
+Word | Meaning | Pronunciation
+--- | --- | ---
+class | 类 | BrE /klɑːs/ AmE /klæs/
+built-in | 内置的 | /bɪlt ɪn/
+classify | 分类 | /ˈklæsɪfaɪ/
+feature | 特性 | /ˈfiːtʃə(r)/
+structure | 结构 | /ˈstrʌktʃə(r)/
+enumeration | 枚举 | BrE /ɪˌnjuːməˈreɪʃn/ AmE /ɪˌnuːməˈreɪʃn/
+concept | 概念 | BrE /ˈkɒnsept/ AmE /ˈkɑːnsept/
+destroy | 销毁 | /dɪˈstrɔɪ/
+entity | 实体 | /ˈentəti/
+interface | 接口 | BrE /ˈɪntəfeɪs/ AmE /ˈɪntərfeɪs/
+evolve | 进化；演变 | BrE /iˈvɒlv/ AmE /iˈvɑːlv/
+proposal | 提议 | BrE /prəˈpəʊzl/ AmE /prəˈpoʊzl/
+implicit | 隐式的 | /ɪmˈplɪsɪt/
+valid | 有效的 | /ˈvælɪd/
+constructor | 构造函数 | /kənˈstrʌktə(r)/
+expose | 暴露 | BrE /ɪkˈspəʊz/ AmE /ɪkˈspoʊz/
+invariant | 不变式 | BrE /ɪnˈveəriənt/ AmE /ɪnˈveriənt/
+validity | 合法性 | /vəˈlɪdəti/
+
+TODO: words from [here](https://github.com/Little-Flower-171/C-2018/blob/master/10/student.md#defining-member-functions) and later
