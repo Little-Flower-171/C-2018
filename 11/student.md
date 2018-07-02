@@ -228,3 +228,15 @@ void f()
 ```
 
 We intended to call `LF::move`, but accidentally referred to `std::move`. Global `using` directives had better be avoided; local ones are better, but stays evil.
+
+## Words
+
+Word | Meaning | Pronunciation
+--- | --- | ---
+extern | 外部的 | BrE /ˈekstɜːn/ AmE /ˈekstɜːrn/
+global | 全局的 | BrE /ˈɡləʊbl/ AmE /ˈɡloʊbl/
+local | 局部的 | BrE /ˈləʊkl/ AmE /ˈloʊkl/
+namespace | 命名空间 | /neɪm speɪs/
+counterpart | 对应部分 | BrE /ˈkaʊntəpɑːt/ AmE /ˈkaʊntərpɑːrt/
+allocator | 分配器 | /ˈæləkeɪtə(r)/
+hash | 哈希 | /hæʃ/

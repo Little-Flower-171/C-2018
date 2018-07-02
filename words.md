@@ -8,6 +8,7 @@ accumulation | 积累 | /əˌkjuːmjəˈleɪʃn/
 accurate | 精确的 | /ˈækjərət/
 add | 增加 | /æd/
 advanced | 进一步的 | BrE /ədˈvɑːnst/ AmE /ədˈvænst/
+allocator | 分配器 | /ˈæləkeɪtə(r)/
 alphanumeric | 字母或数字 | BrE /ˌælfənjuːˈmerɪk/ AmE /ˌælfənuːˈmerɪk/
 angle bracket | 尖角括号 | /ˈæŋɡl ˈbrækɪt/
 append | 追加 | /əˈpend/
@@ -52,6 +53,7 @@ content | 内容 | BrE /ˈkɒntent/ AmE /ˈkɑːntent/
 contract | 缩小 | /kənˈtrækt/
 convert | 转换 | BrE /kənˈvɜːt/ AmE /kənˈvɜːrt/
 copy | 复制 | BrE /ˈkɒpi/ AmE /ˈkɑːpi/
+counterpart | 对应部分 | BrE /ˈkaʊntəpɑːt/ AmE /ˈkaʊntərpɑːrt/
 data | 数据 | /ˈdeɪtə/ BrE also /ˈdɑːtə/ AmE also /ˈdætə/
 database | 数据库 | /ˈdeɪtəbeɪs/ AmE also /ˈdætəbeɪs/
 decimal | 十进制 | /ˈdesɪml/
@@ -89,6 +91,7 @@ execution | n. 运行 | /ˌeksɪˈkjuːʃn/
 expand | 扩大 | /ɪkˈspænd/
 expose | 暴露 | BrE /ɪkˈspəʊz/ AmE /ɪkˈspoʊz/
 expression | 表达式 | /ɪkˈspreʃn/
+extern | 外部的 | BrE /ˈekstɜːn/ AmE /ˈekstɜːrn/
 extract | 提取 | /ɪkˈstrækt/
 fatal | 致命的 | /ˈfeɪtl/
 feature | 特性 | /ˈfiːtʃə(r)/
@@ -98,9 +101,11 @@ form | 形式 | BrE /fɔːm/ AmE /fɔːrm/
 format | 格式 | BrE /ˈfɔːmæt/ AmE /ˈfɔːrmæt/
 fragment | 片段 | /ˈfræɡmənt/
 function | 函数 | /ˈfʌŋkʃn/
+global | 全局的 | BrE /ˈɡləʊbl/ AmE /ˈɡloʊbl/
 guarantee | 保证 | /ˌɡærənˈtiː/
 handle | 处理 | /ˈhændl/
 hardware | 硬件 | BrE /ˈhɑːdweə/ AmE /ˈhɑːrdwer/
+hash | 哈希 | /hæʃ/
 header | 头文件 | /ˈhedə(r)/
 hint | 提示；窍门 | /hɪnt/
 homogeneous | 同构的 | BrE /ˌhɒməˈdʒiːniəs/ AmE /ˌhoʊməˈdʒiːniəs/
@@ -131,6 +136,7 @@ line feed | 换行（字符） | /laɪn fiːd/
 link | 链接 | /lɪŋk/
 linker | 链接器 | /ˈlɪŋkə(r)/
 list | 列表 | /lɪst/
+local | 局部的 | BrE /ˈləʊkl/ AmE /ˈloʊkl/
 logic | 逻辑 | BrE /ˈlɒdʒɪk/ AmE /ˈlɑːdʒɪk/
 loop | 循环 | /luːp/
 manage | 管理 | /ˈmænɪdʒ/
@@ -142,6 +148,7 @@ message | 信息 | /ˈmesɪdʒ/
 modify | 修改 | BrE /ˈmɒdɪfaɪ/ AmE /ˈmɑːdɪfaɪ/
 move | 移动 | /muːv/
 mutate | 修改 | BrE /mjuːˈteɪt/ AmE /ˈmjuːteɪt/
+namespace | 命名空间 | /neɪm speɪs/
 object | 对象 | BrE /ˈɒbdʒɪkt/ AmE /ˈɑːbdʒekt; ˈɑːbdʒɪkt/
 occur | 发生 | /əˈkɜː(r)/
 operand | 操作数 | BrE /ˈɒpərænd/ AmE /ˈɑːpərænd/
