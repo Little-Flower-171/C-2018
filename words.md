@@ -12,6 +12,7 @@ allocator | 分配器 | /ˈæləkeɪtə(r)/
 alphanumeric | 字母或数字 | BrE /ˌælfənjuːˈmerɪk/ AmE /ˌælfənuːˈmerɪk/
 angle bracket | 尖角括号 | /ˈæŋɡl ˈbrækɪt/
 append | 追加 | /əˈpend/
+applicable | 适用的 | /əˈplɪkəbl; ˈæplɪkəbl/
 application | 应用程序 | /ˌæplɪˈkeɪʃn/
 argument | 参量；实参（实际参数） | BrE /ˈɑːɡjumənt/ AmE /ˈɑːrɡjumənt/
 arithmetical | 算术的 | /ˌærɪθˈmetɪkl/
@@ -42,8 +43,10 @@ code | 代码 | BrE /kəʊd/ AmE /koʊd/
 compile | 编译 | /kəmˈpaɪl/
 compiler | 编译器 | /kəmˈpaɪlə(r)/
 compound | 复合的 | BrE /ˈkɒmpaʊnd/ AmE /ˈkɑːmpaʊnd/ 
+computation | 计算 | BrE /ˌkɒmpjuˈteɪʃn/ AmE /ˌkɑːmpjuˈteɪʃn/
 concept | 概念 | BrE /ˈkɒnsept/ AmE /ˈkɑːnsept/
 condition | 条件 | /kənˈdɪʃn/
+conforming | 符合标准的 | BrE /kənˈfɔːmɪŋ/ AmE /kənˈfɔːrmɪŋ/
 consistent | 一致的 | /kənˈsɪstənt/
 console | 控制台 | BrE /ˈkɒnsəʊl/ AmE /ˈkɑːnsoʊl/
 construct | 构造 | /kənˈstrʌkt/
