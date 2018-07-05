@@ -6,8 +6,12 @@ accept | 接受 | /əkˈsept/
 access | 访问 | /ˈækses/
 accumulation | 积累 | /əˌkjuːmjəˈleɪʃn/
 accurate | 精确的 | /ˈækjərət/
+acquire | 获取 | /əˈkwaɪə(r)/
 add | 增加 | /æd/
+address | 地址 | BrE /əˈdres/ AmE /ˈædres/
 advanced | 进一步的 | BrE /ədˈvɑːnst/ AmE /ədˈvænst/
+allocate | v. 分配 | /ˈæləkeɪt/
+allocation | n. 分配 | /ˌæləˈkeɪʃn/
 allocator | 分配器 | /ˈæləkeɪtə(r)/
 alphanumeric | 字母或数字 | BrE /ˌælfənjuːˈmerɪk/ AmE /ˌælfənuːˈmerɪk/
 angle bracket | 尖角括号 | /ˈæŋɡl ˈbrækɪt/
@@ -59,14 +63,18 @@ copy | 复制 | BrE /ˈkɒpi/ AmE /ˈkɑːpi/
 counterpart | 对应部分 | BrE /ˈkaʊntəpɑːt/ AmE /ˈkaʊntərpɑːrt/
 data | 数据 | /ˈdeɪtə/ BrE also /ˈdɑːtə/ AmE also /ˈdætə/
 database | 数据库 | /ˈdeɪtəbeɪs/ AmE also /ˈdætəbeɪs/
+deallocation | n. 释放 | /ˌdiːæləˈkeɪʃn/
 decimal | 十进制 | /ˈdesɪml/
 declaration | n. 声明 | /ˌdekləˈreɪʃn/
 declare | v. 声明 | BrE /dɪˈkleə(r)/ AmE /dɪˈkler/
 default | 默认 | /dɪˈfɔːlt; ˈdiːfɔːlt/
 define | v. 定义 | /dɪˈfaɪn/
 definition | n. 定义 | /ˌdefɪˈnɪʃn/
+dereference | 解引用；间接访问 | /ˌdiːˈrefrəns/
 desirable | 期望的 | /dɪˈzaɪərəbl/
 destroy | 销毁 | /dɪˈstrɔɪ/
+destruction | 析构 | /dɪˈstrʌkʃn/
+destructor | 析构函数 | /dɪˈstrʌktə(r)/
 detail | 细节 | /ˈdiːteɪl/ AmE also /dɪˈteɪl/
 detect | 检测 | /dɪˈtekt/
 directive | 指示 | /dəˈrektɪv; dɪˈrektɪv; daɪˈrektɪv/
@@ -103,6 +111,7 @@ flag | 信号 | /flæɡ/
 form | 形式 | BrE /fɔːm/ AmE /fɔːrm/
 format | 格式 | BrE /ˈfɔːmæt/ AmE /ˈfɔːrmæt/
 fragment | 片段 | /ˈfræɡmənt/
+free store | 自由存储 | /friː stɔː(r)/
 function | 函数 | /ˈfʌŋkʃn/
 global | 全局的 | BrE /ˈɡləʊbl/ AmE /ˈɡloʊbl/
 guarantee | 保证 | /ˌɡærənˈtiː/
@@ -132,6 +141,7 @@ invariant | 不变式 | BrE /ɪnˈveəriənt/ AmE /ɪnˈveriənt/
 iterate | v. 迭代 | /ˈɪtəreɪt/
 iteration | n. 迭代 | /ˌɪtəˈreɪʃn/
 lead | 前导 | /liːd/
+leak | 泄露 | /liːk/
 library | 库 | BrE /ˈlaɪbrəri; ˈlaɪbri/ AmE /ˈlaɪbreri/
 limit | 限制 | /ˈlɪmɪt/
 line | 行 | /laɪn/
@@ -152,6 +162,7 @@ modify | 修改 | BrE /ˈmɒdɪfaɪ/ AmE /ˈmɑːdɪfaɪ/
 move | 移动 | /muːv/
 mutate | 修改 | BrE /mjuːˈteɪt/ AmE /ˈmjuːteɪt/
 namespace | 命名空间 | /neɪm speɪs/
+null | 无值的；无效的 | /nʌl/
 object | 对象 | BrE /ˈɒbdʒɪkt/ AmE /ˈɑːbdʒekt; ˈɑːbdʒɪkt/
 occur | 发生 | /əˈkɜː(r)/
 operand | 操作数 | BrE /ˈɒpərænd/ AmE /ˈɑːpərænd/
@@ -167,6 +178,7 @@ parentheses | （圆）括号（复数） | /pəˈrenθəsiːz/
 parenthesis | （圆）括号（单数） | /pəˈrenθəsɪs/
 parse | 分析 | BrE /pɑːz/ AmE /pɑːrs/
 perform | 执行 | BrE /pəˈfɔːm/ AmE /pərˈfɔːrm/
+pointer | 指针 | /ˈpɔɪntə(r)/
 position | 位置 | /pəˈzɪʃn/
 pre-condition | 前置条件 | /ˌpriːkənˈdɪʃn/
 print | 打印 | /prɪnt/
@@ -183,6 +195,7 @@ recover | 恢复 | /rɪˈkʌvə(r)/
 reduce | 缩小 | BrE /rɪˈdjuːs/ AmE /rɪˈduːs/
 reference | 引用 | /ˈrefrəns/
 reject | 拒绝 | /rɪˈdʒekt/
+release | 释放 | /rɪˈliːs/
 remove | 移除 | /rɪˈmuːv/
 report | 报告 | BrE /rɪˈpɔːt/ AmE /rɪˈpɔːrt/
 represent | v. 表示 | /ˌreprɪˈzent/
@@ -192,6 +205,7 @@ require | v. 要求 | /rɪˈkwaɪə(r)/
 requirement | n. 要求 | BrE /rɪˈkwaɪəmənt/ AmE /rɪˈkwaɪərmənt/
 resolution | 解析 | /ˌrezəˈluːʃn/
 resolve | 解决 | BrE /rɪˈzɒlv/ AmE /rɪˈzɑːlv/
+resource | 资源 | BrE /rɪˈsɔːs; rɪˈzɔːs/ AmE /ˈriːsɔːrs; rɪˈsɔːrs/
 result | 结果 | /rɪˈzʌlt/
 return | 返回 | BrE /rɪˈtɜːn/ AmE /rɪˈtɜːrn/
 reverse | 相反 | BrE /rɪˈvɜːs/ AmE /rɪˈvɜːrs/
@@ -209,6 +223,7 @@ source | 源代码 | BrE /sɔːs/ AmE /sɔːrs/
 space | 空格（字符） | /speɪs/
 specification | n. 说明 | /ˌspesɪfɪˈkeɪʃn/
 specify | v. 说明 | /ˈspesɪfaɪ/
+stack | 栈(zhɑ̀n) | /stæk/
 standard | 标准 | BrE /ˈstændəd/ AmE /ˈstændərd/
 state | 状态 | /steɪt/
 statement | 语句 | /ˈsteɪtmənt/
