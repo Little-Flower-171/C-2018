@@ -8,7 +8,7 @@ int main()
         char c; std::cin.get(c);
         switch (c) {
         case 'a': case 'e': case 'i': case 'o': case 'u':
-            std::cout << x; break;
+            std::cout << 'x'; break;
         default:
             std::cout << c;
         }
